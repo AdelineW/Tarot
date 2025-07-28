@@ -52,7 +52,7 @@
 
     
     <div class="cab_deck">
-    <button style="<?php echo ($btn_BackColor !== '') ?  'background:'.esc_attr($btn_BackColor).';' : ''; echo ($btn_TextColor !== '') ?  'color:'.esc_attr($btn_TextColor).'!important;' : '';?>" id="barajar">
+    <button class="w-btn us-btn-style_1" id="barajar">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 49.7 49.7"  xml:space="preserve"><g>
             <path fill="currentColor" d="M27,13.85h9v8.964l13.7-9.964L36,2.886v8.964h-9c-7.168,0-13,5.832-13,13c0,6.065-4.935,11-11,11H1c-0.553,0-1,0.447-1,1
