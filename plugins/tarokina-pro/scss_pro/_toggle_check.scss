@@ -1,0 +1,83 @@
+.text_unistall{
+  position: relative;
+  right: 10px;
+  margin-top: -32px;
+  display: block;
+  color: $arnelio_color;
+}
+
+.cf-field.cf-checkbox.tabs_color {
+  &.bor{
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+    label.cf-checkbox__label {
+      color: #32373c;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+
+  label.cf-checkbox__label {
+    margin-left: 17px;
+    color: $form_titles;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .cf-field__body input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    &:checked {
+      &::before {
+        content: "" !important;
+      }
+    }
+  }
+  .cf-field__body input[type="checkbox"]:focus,
+  .cf-field__body input[type="checkbox"]:active {
+    outline: 0;
+    border: none;
+  }
+
+  .cf-field__body input {
+    height: 28px;
+    width: 48px;
+    border-radius: 16px;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    border: none;
+    background: #eaeaea;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .cf-field__body input:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: white;
+    -webkit-box-shadow: 0 1px 2px rgba(44, 44, 44, 0.2);
+    box-shadow: 0 1px 2px rgba(44, 44, 44, 0.2);
+    -webkit-transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+    -o-transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+    transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+  }
+  .cf-field__body input:checked {
+    //border-color: #654FEC;
+    border: none;
+    background: $primary-color;
+  }
+  .cf-field__body input:checked:after {
+    -webkit-transform: translatex(20px);
+    -ms-transform: translatex(20px);
+    transform: translatex(20px);
+  }
+}

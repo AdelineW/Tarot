@@ -1,0 +1,195 @@
+.bloq_deck {
+  margin-bottom: 60px;
+  z-index: 9999999999999999;
+  //position: relative;
+}
+
+.cab_deck {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+  .TitleSelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  .TitleSelect2 {
+    //color: red;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+
+  #Capa_1 {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    overflow: hidden;
+    margin: -6px 0;
+  }
+  #numCSTotal{
+    margin-left: 10px;
+  }
+
+  .card_select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-decoration: none !important;
+    cursor: default;
+    font-style: italic;
+    font-size: 91%;
+    // @media (max-width: 500px) {
+    //   width: 100%;
+    //   margin-top: 20px;
+    // }
+  }
+}
+
+/////////////////////////////////////  DECK
+#barajar {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+  margin: 0;
+  padding: 5px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  
+  svg {
+    width: 18px;
+    display: inline-block;
+  }
+  &:focus svg,
+  &:hover svg {
+    color: inherit;
+  }
+}
+#deck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 35px 15px 37px 47px;
+  margin: -23px -15px 0;
+  overflow: hidden;
+
+  .card {
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  .backface {
+    background-repeat: round !important;
+    text-decoration: none;
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    &.c_select {
+      &:hover {
+        -webkit-transform: translate(0, -20px) !important;
+        -ms-transform: translate(0, -20px) !important;
+        transform: translate(0, -20px) !important;
+      }
+    }
+    &.c_block {
+      position: relative;
+      top: 0px;
+      left: 0px;
+
+      -webkit-transform: translate(0, -20px) !important;
+      -ms-transform: translate(0, -20px) !important;
+      transform: translate(0, -20px) !important;
+      border: none !important;
+    }
+  }
+
+  .flip-card-inner {
+    position: relative;
+    text-align: center;
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: -webkit-transform 0.8s;
+    -o-transition: transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    width: 100%;
+    max-width: 100px;
+    margin-left: -36px;
+    border-radius: 6px;
+    //border-left: 1px solid #afafaf;
+    -webkit-box-shadow: 0px 15px 13px -17px rgba(#6d6c6c, 0.75);
+    box-shadow: 0px 15px 13px -17px rgba(#6d6c6c, 0.75);
+    // @media (max-width: 768px) {
+    //   max-width: 60px;
+    // }
+  }
+
+  .flip-card-front {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    & img {
+      border-radius: 6px;
+    }
+  }
+
+  .flip-card-back {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    cursor: pointer;
+    border-left: 1px solid #e1e1e1;
+    border-radius: 6px;
+  }
+
+  .flash {
+    visibility: visible;
+    color: #fff;
+    opacity: 1;
+    -webkit-animation-name: parpadeo;
+    animation-name: parpadeo;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-iteration-count: 3;
+    animation-iteration-count: 3;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+}

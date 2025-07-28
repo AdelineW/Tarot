@@ -1,0 +1,465 @@
+@media (min-width: 650px) {
+  #d0 #bloq_deck {
+    #deck {
+      grid-template-columns: repeat(
+        auto-fill,
+        minmax(62px, -webkit-max-content)
+      ) !important;
+      grid-template-columns: repeat(
+        auto-fill,
+        minmax(62px, max-content)
+      ) !important;
+    }
+  }
+}
+
+//////////////////// Spread
+.spread {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  //margin-bottom: 0;
+
+  padding: 20px 20px 80px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .capaColor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+  }
+
+  h2 {
+    position: relative;
+    text-align: center;
+    margin: 7% 0 10px 0;
+  }
+
+  .subTitle {
+    position: relative;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.8;
+    margin-top: 8px !important;
+    width: 100%;
+    #subTitle {
+      text-align: center;
+    }
+    a {
+      opacity: 0.7 !important;
+      display: block !important;
+      margin-top: 8px;
+      z-index: 100;
+      position: relative;
+      font-size: 14px;
+      text-align: center;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      margin-top: 8px !important;
+      width: 120px;
+      padding: 0 8px;
+      line-height: 1.4;
+      font-family: monospace !important;
+      text-decoration: none !important;
+      & svg {
+        vertical-align: sub;
+        margin-right: 2px;
+        display: inline-block;
+      }
+    }
+    @media (min-width: 600px) {
+      padding: 0 16%;
+    }
+  }
+
+  ////////////////////////////  Tablero
+  .tablero {
+    //margin-top: 15%;
+
+    .molde {
+      border: 2px solid rgba(#f8f8f8, 0.63);
+      border-radius: 6px;
+      -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+      box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+      &::before {
+        position: relative;
+        color: #333333;
+        z-index: 1;
+        display: inline-block;
+        background: #f8f8f8;
+        border-radius: 50%;
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+          0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+          0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+        @media (max-width: 500px) {
+          width: 17px;
+          height: 17px;
+          line-height: 17px;
+          font-size: 11px;
+        }
+      }
+
+      .cardClik {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 6px;
+        height: 100%;
+        width: 100%;
+        margin: 0 !important;
+      }
+
+      .card_click {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 6px;
+        height: 100%;
+        width: 100%;
+        margin: 0 !important;
+      }
+      &.cc {
+        pointer-events: none !important;
+        cursor: not-allowed !important;
+        .card_click {
+          display: -webkit-box !important;
+          display: -ms-flexbox !important;
+          display: flex !important;
+        }
+        .trasera {
+          visibility: hidden !important;
+        }
+      }
+
+      .sizeImg {
+        visibility: hidden;
+        display: block;
+        margin: 0 !important;
+        width: 100%;
+        height: auto;
+      }
+      .traseraImg {
+        display: block;
+        margin: 0 !important;
+        width: 100%;
+        height: auto;
+      }
+
+      &::before {
+        top: -2px;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position: absolute;
+      }
+    }
+  }
+}
+
+#deck {
+  .card {
+    margin: 0 !important;
+  }
+}
+
+#bloq-re-throw {
+  text-align: center;
+  .re-throw {
+    text-align: center;
+    margin-top: 60px;
+    cursor: pointer;
+    text-decoration: none;
+    min-height: 35px;
+    padding: 15px;
+  }
+}
+
+.text_spread {
+  padding: 15px 0;
+  margin-left: auto;
+  margin-right: auto;
+  .meaningsTitles {
+    margin-bottom: 25px;
+  }
+  & ol {
+    display: block;
+    list-style-type: decimal;
+    -webkit-margin-before: 1em;
+    margin-block-start: 1em;
+    -webkit-margin-after: 1em;
+    margin-block-end: 1em;
+    -webkit-margin-start: 0px;
+    margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+    margin-inline-end: 0px;
+    -webkit-padding-start: 40px;
+    padding-inline-start: 40px;
+    margin-left: 10px;
+    padding-right: 20px;
+    & li {
+      // &::marker {
+      //   font-family: monospace;
+      // }
+      -webkit-box-shadow: inset 0 -1px 0px 0px rgba(204, 204, 204, 0.3);
+      box-shadow: inset 0 -1px 0px 0px rgba(204, 204, 204, 0.3);
+      padding: 0 0 18px;
+      margin: 0 0 18px;
+      @media (max-width: 400px) {
+        padding: 0 0 8px;
+        margin: 0 0 8px;
+      }
+    }
+    & li:last-child {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.parpadea {
+  animation-name: parpadeo;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#d0 {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.yesno {
+  font-size: 25px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #55555e;
+  color: #f8f8f8;
+  margin: 20px 0;
+  border-radius: 15px 2px;
+}
+
+.Text1 {
+  padding: 35px 0;
+}
+
+// Decks
+.d1 {
+  @import "../decks/d1";
+}
+.d2 {
+  @import "../decks/d2";
+}
+
+.d3 {
+  @import "../decks/d3";
+}
+
+.d4 {
+  @import "../decks/d4";
+}
+
+.rojo_color {
+  color: #58151c;
+}
+.rojo_bg {
+  background: #f8d7da;
+}
+.rojo_borde {
+  border-color: #f1aeb5;
+}
+
+.amarillo_color {
+  color: #664d03;
+}
+.amarillo_bg {
+  background: #fff3cd;
+}
+.amarillo_borde {
+  border-color: #ffe69c;
+}
+
+.verde_color {
+  color: #0a3622;
+}
+.verde_bg {
+  background: #d1e7dd;
+}
+.verde_borde {
+  border-color: #a3cfbb;
+}
+
+// Developer
+&.devp_1 {
+  .panelBloq {
+    font-family: monospace, arial, sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 15px;
+    font-style: normal;
+    .panelTotal {
+      padding: 0px 8px;
+      margin-right: 15px;
+      background: #fff;
+      border-radius: 4px;
+    }
+    .pa_0 {
+      display: none;
+    }
+    .panelText {
+      background: #d1e7dd;
+      color: #0a3622;
+      border: 1px solid #a3cfbb;
+      text-align: center;
+      padding: 0 14px 0 8px;
+      border-radius: 4px;
+      margin-right: 15px;
+      &::after {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        content: "";
+        background-image: url(../img/thumbs-up.svg);
+        background-repeat: no-repeat;
+        background-size: 15px 15px;
+        height: 15px;
+        width: 15px;
+        position: relative;
+        top: 1px;
+        left: 5px;
+      }
+    }
+    .panelEmpty {
+      background: #f8d7da;
+      color: #58151c;
+      border: 1px solid #f1aeb5;
+      text-align: center;
+      padding: 0 14px 0 8px;
+      border-radius: 4px;
+      &::after {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        content: "";
+        background-image: url(../img/thumbs-down.svg);
+        background-repeat: no-repeat;
+        background-size: 15px 15px;
+        height: 15px;
+        width: 15px;
+        position: relative;
+        top: 5px;
+        left: 5px;
+      }
+    }
+  }
+
+  .spread #tablero {
+    display: none;
+  }
+
+  .noText {
+    text-align: center;
+    padding: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 70px;
+    span {
+      padding: 10px;
+    }
+  }
+
+  .tabs_result {
+    .titleCardsDevp,
+    .titleReversedCardsDevp {
+      padding: 10px;
+      text-align: center;
+      font-size: 25px;
+    }
+  }
+
+  .TableInfo {
+    padding: 20px 20px 10px;
+    background: #f2f2f2;
+    font-family: monospace;
+    font-size: 13px;
+    border-radius: 6px;
+  }
+
+  .table-card-info {
+    margin: 40px 0 -14px;
+  }
+}
+

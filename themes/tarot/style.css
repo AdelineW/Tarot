@@ -1,0 +1,307 @@
+/*
+Theme Name: Tarot
+Template: Impreza
+Version: 1.0
+Author:	AW
+Theme URI: https://reactive-com.com/
+Author URI: https://reactive-com.com/
+*/
+
+.home h1 {
+    font-size: calc(1.75rem + .5vw);
+    color: var(--h2-color, inherit);
+    line-height: 1.3;
+}
+
+.no-touch .l-subheader.at_middle a {
+    color: var(--color-content-text);
+}
+
+.no-touch .l-header.bg_transparent .l-subheader.at_middle .w-dropdown.opened a:hover {
+    color: var(--color-content-bg) !important;
+}
+
+.l-section.color_alternate h2 {
+    color: var(--h2-color, inherit) !important;
+}
+
+/* h2:first-child {
+    padding-top: 1.5rem !important;
+} */
+
+main .wpb_wrapper ul,
+.l-section ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+main .wpb_wrapper ul li:not(.panel),
+.l-section ul li:not(.panel),
+ol li {
+    list-style: none;
+}
+
+main .wpb_wrapper ul li:not(.panel):before,
+.l-section ul li:not(.panel):before,
+.listform p a:before {
+    content: " ";
+    display: inline-flex;
+    height: .5rem;
+    width: .5rem;
+    margin: 0 .5rem 0 0;
+    list-style: none;
+    background: var(--color-content-primary);
+    -webkit-mask: url(img/puce.svg) center no-repeat;
+    mask: url(img/puce.svg) center no-repeat;
+    vertical-align: middle;
+}
+
+/*.l-main .wpb_text_column a[target=_blank] {
+    color: var(--color-content-primary);
+}*/
+.l-main .wpb_text_column a[target=_blank]:after {
+    background-color: var(--color-content-primary);
+    content: "-";
+    display: inline;
+    -webkit-mask: url(img/lien-externe.svg) center/80% no-repeat;
+    mask: url(img/lien-externe.svg) center/80% no-repeat;
+    padding-top: 1px;
+    vertical-align: middle;
+    margin-left: 4px;
+    padding-left: 1rem;
+}
+
+.u {
+    text-decoration: underline;
+}
+
+.g-breadcrumbs {
+    position: absolute;
+    z-index: 3;
+    bottom: -.35rem;
+    right: 1.5rem;
+}
+
+.g-breadcrumbs>li,
+.g-breadcrumbs>span {
+    color: #fff;
+}
+
+.g-breadcrumbs .g-breadcrumbs-item a:not(:last-child) {
+    color: #fff;
+}
+
+.g-breadcrumbs .g-breadcrumbs-item a:not(:last-child):hover {
+    color: var(--color-content-link);
+}
+
+.g-breadcrumbs-separator {
+    margin: 0.2rem 0.6em 0;
+}
+
+/* home */
+.consult.layout_portfolio_2 .usg_vwrapper_1 {
+    background: linear-gradient(transparent, rgba(21, 52, 87, 0.8)) !important;
+}
+
+.consult.layout_portfolio_2 .w-grid-item-h {
+    background: #0177a9;
+}
+
+.l-section.color_alternate h2.w-post-elm {
+    color: #fff !important;
+}
+
+/* interactive img */
+.w-ibanner,
+.consult .w-grid-item-h {
+    border-radius: 1rem;
+}
+
+.w-ibanner h2,
+.w-ibanner p {
+    color: var(--color-content-bg) !important;
+    text-align: center;
+    font-family: var(--font-family);
+    line-height: 2rem;
+}
+
+.w-ibanner.animation_aphelia .w-ibanner-image {
+    opacity: 0.5;
+}
+
+/* FORM / CONTACT */
+a.w-contacts-item.for_email {
+    margin-top: 1.3rem;
+}
+
+span.w-contacts-item-value {
+    margin-right: 1.3rem;
+}
+
+.l-main .w-contacts-item:hover:before {
+    background: var(--color-content-border) !important;
+    transition-property: background, border, box-shadow, color, opacity, transform;
+    transition-duration: 0.3s;
+}
+
+span.w-contacts-item-value:hover,
+a:hover span.w-contacts-item-value {
+    color: var(--color-content-primary);
+    transition-property: background, border, box-shadow, color, opacity, transform;
+    transition-duration: 0.3s;
+}
+
+.color_alternate input:not([type="submit"]),
+.color_alternate textarea,
+.color_alternate select,
+.color_alternate .w-form-checkbox,
+.color_alternate .w-form-radio,
+.color_alternate .move_label .w-form-row-label {
+    background: #fff;
+}
+
+.w-form-row-description {
+    color: inherit !important;
+}
+
+.wpcf7-form input:not([type="submit"]),
+.wpcf7-form textarea,
+.wpcf7-form select {
+    margin-top: 1rem;
+}
+
+.wpcf7-form input[type="checkbox"] {
+    margin-top: 0;
+}
+
+span.wpcf7-form-control.wpcf7-acceptance {
+    padding-top: 0.8rem;
+    font-size: 15px;
+    display: block;
+    line-height: 1.4;
+}
+
+.w-popup-box.active+.w-popup-closer {
+    background: var(--color-header-top-text-hover);
+    color: var(--color-content-text);
+}
+
+/* CTA */
+
+
+.g-cols.via_grid.type_boxes>.vc_column_container,
+.g-cols.via_flex.type_boxes>div>.vc_column-inner {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* FOOTER */
+footer .color_footer-bottom:before,
+footer ul li:before {
+    background: #fff !important;
+}
+
+.g-cols.mob.type_default>div[class*="vc_col-xs-"] {
+    margin: 0 !important;
+}
+
+.no-touch .color_footer-bottom a:hover,
+#menu-mentions>li>a:hover {
+    color: var(--color-footer-link-hover) !important;
+}
+
+a[href="https://reactive-com.com"] {
+    display: inline-flex;
+    color: #fff !important;
+    font-size: .8rem;
+}
+
+a[href=https: //reactive-com.com]:hover {
+color:var(--color-content-secondary) !important;
+}
+
+a[href="https://reactive-com.com"]:before {
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    padding: 5px 1rem 0 0;
+    background: url(img/reactive-communication.svg) no-repeat bottom center;
+}
+
+.mob {
+    width: 100% !important;
+    grid-gap: 0 !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0;
+    z-index: 3 !important;
+    background: var(--color-subfooter-bg);
+    display: flex !important;
+    justify-content: space-around;
+}
+
+.mob .w-btn-wrapper {
+    margin: 0
+}
+
+.mob .w-btn.icon_atleft i {
+    margin: 0 0 .35rem;
+    clear: both;
+    display: block;
+    font-size: 1.5rem;
+}
+
+div div.grecaptcha-badge {
+    display: none
+}
+
+.w-toplink.pos_right {
+    bottom: 3rem;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (min-width: 601px) {
+    .intro {
+        background-image: linear-gradient(-90deg, var(--color-content-primary) 30%, #fff 30%);
+    }
+}
+
+
+.message-attente,
+.message-erreur {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message-attente .spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Masquer le formulaire pendant l'attente */
+.wpcf7-form.hidden {
+    display: none;
+}

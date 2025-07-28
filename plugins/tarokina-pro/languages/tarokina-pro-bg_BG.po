@@ -1,0 +1,1514 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tarokina Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-24 19:48+0000\n"
+"PO-Revision-Date: 2025-03-12 18:09+0000\n"
+"Last-Translator: \n"
+"Language-Team: Bulgarian\n"
+"Language: bg_BG\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.1\n"
+"X-Domain: tarokina-pro"
+
+#: admin/tarots/vista.php:185
+msgid " Title color in the final draw. The theme link is loaded by default."
+msgstr ""
+" Цвят на заглавието в крайното теглене. Връзката към темата се зарежда по "
+"подразбиране."
+
+#: admin/fields/fields_options.php:15 public/template/texts/production.php:111
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: includes/functions.php:216 includes/functions.php:228
+#, php-format
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%s ден"
+msgstr[1] "%s дни"
+
+#: includes/functions.php:229 includes/functions.php:240
+#, php-format
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] "%s час"
+msgstr[1] "%s часа"
+
+#: admin/fields/fields_options.php:15
+#, php-format
+msgid "%s is a necessary variable that shows the name of the card."
+msgstr "%s е необходима променлива, която показва името на картата."
+
+#: admin/fields/fields_options.php:47
+#, php-format
+msgid "%s is the variable containing the link to the product in the store."
+msgstr "%s е променливата, която съдържа връзката към продукта в магазина."
+
+#: includes/functions.php:241 includes/functions.php:252
+#: includes/functions.php:270
+#, php-format
+msgid "%s minute"
+msgid_plural "%s minutes"
+msgstr[0] "%s минута"
+msgstr[1] "%s минути"
+
+#: includes/functions.php:203 includes/functions.php:215
+#, php-format
+msgid "%s month"
+msgid_plural "%s months"
+msgstr[0] "%s месец"
+msgstr[1] "%s месеца"
+
+#: includes/functions.php:253 includes/functions.php:271
+#, php-format
+msgid "%s second"
+msgid_plural "%s seconds"
+msgstr[0] "%s секунда"
+msgstr[1] "%s секунди"
+
+#: public/template/decks/d4.php:132 public/template/decks/d4.php:138
+#, php-format
+msgid "%s text"
+msgid_plural "%s texts"
+msgstr[0] "%s текст"
+msgstr[1] "%s текстове"
+
+#: includes/functions.php:202
+#, php-format
+msgid "%s year"
+msgid_plural "%s years"
+msgstr[0] "%s година"
+msgstr[1] "%s години"
+
+#: lib/tarokina-pro/fields.php:131
+msgid "0"
+msgstr "0"
+
+#: lib/insert-areas.php:16
+msgid "1 Day"
+msgstr "1 ден"
+
+#: lib/insert-areas.php:15
+msgid "1 Hour"
+msgstr "1 час"
+
+#: lib/insert-areas.php:18
+msgid "1 Month"
+msgstr "1 месец"
+
+#: lib/insert-areas.php:17
+msgid "1 Week"
+msgstr "1 седмица"
+
+#: lib/insert-areas.php:19
+msgid "1 Year"
+msgstr "1 година"
+
+#: admin/tarots/vista.php:153
+msgid "1. card:"
+msgstr "1. карта:"
+
+#: admin/tarots/vista.php:171
+msgid "10. card:"
+msgstr "10. карта:"
+
+#: admin/tarots/vista.php:155
+msgid "2. card:"
+msgstr "2. карта:"
+
+#: admin/tarots/vista.php:157
+msgid "3. card:"
+msgstr "3. карта:"
+
+#: admin/tarots/vista.php:159
+msgid "4. card:"
+msgstr "4. карта:"
+
+#: admin/tarots/vista.php:161
+msgid "5. card:"
+msgstr "5. карта:"
+
+#: admin/tarots/vista.php:163
+msgid "6. card:"
+msgstr "6. карта:"
+
+#: admin/tarots/vista.php:165
+msgid "7. card:"
+msgstr "7. карта:"
+
+#: admin/tarots/vista.php:167
+msgid "8. card:"
+msgstr "8. карта:"
+
+#: admin/tarots/vista.php:169
+msgid "9. card:"
+msgstr "9. карта:"
+
+#: admin/tarots/vista.php:150
+msgid "Above"
+msgstr "Над"
+
+#: includes/class-tarokkina_pro-i18n.php:58
+msgid "Access"
+msgstr "Достъп до"
+
+#: includes/class-tarokkina_pro-i18n.php:53 admin/fields/fields_content.php:165
+msgid "Activate"
+msgstr "Активиране на"
+
+#: admin/fields/fields_content.php:102
+msgid "Activate License"
+msgstr "Активиране на лиценз"
+
+#: admin/grid.php:109 admin/grid.php:180 lib/tarokina-pro/details_pro.php:15
+#: lib/tarokina-pro/details_pro.php:77
+msgid "Active"
+msgstr "Активен"
+
+#: includes/tarokkina_pro_custom_type.php:15
+msgid "Add Card"
+msgstr "Добавяне на карта"
+
+#: admin/tarots/vista.php:64
+msgid ""
+"Add cards to the new deck and assign an image to them from the menu > Cards. "
+"You will not be able to add any text until you create a tarot in step 3."
+msgstr ""
+"Добавете карти в новото тесте и им задайте изображение от менюто > Карти. "
+"Няма да можете да добавяте текст, докато не създадете таро в стъпка 3."
+
+#: includes/tarokkina_pro_custom_type.php:16
+msgid "Add New Card"
+msgstr "Добавяне на нова карта"
+
+#: includes/tarokkina_pro_custom_type.php:70
+msgid "Add new deck"
+msgstr "Добавяне на нова палуба"
+
+#: includes/tarokkina_pro_custom_type.php:14
+msgctxt "Add New on Toolbar"
+msgid "Add Card"
+msgstr "Добавяне на карта"
+
+#: admin/sidebars/sidebar_all.php:35 admin/fields/fields_options.php:15
+msgid "Add text before or after the name of a reversed card."
+msgstr "Добавяне на текст преди или след името на обърнатата карта."
+
+#: admin/class-tarokkina_pro-admin.php:385 admin/sidebars/sidebar_all.php:59
+msgid "Add-ons"
+msgstr "Добавки"
+
+#: includes/tarokkina_pro_custom_type.php:112
+#, php-format
+msgid "All %s"
+msgstr "Всички %s"
+
+#: includes/tarokkina_pro_custom_type.php:67
+msgid "All Decks"
+msgstr "Всички палуби"
+
+#: admin/tarots/vista.php:144
+msgid "All tabs closed"
+msgstr "Всички табове са затворени"
+
+#: admin/tarots/vista.php:145
+msgid "All tabs open"
+msgstr "Всички отворени раздели"
+
+#: admin/fields/fields_content.php:262 admin/fields/fields_content.php:305
+#: admin/fields/fields_content.php:390
+msgid "An error occurred, please try again."
+msgstr "Възникна грешка, опитайте отново."
+
+#. Author of the plugin
+msgid "Arnelio"
+msgstr "Арнелио"
+
+#: admin/sidebars/sidebar_all.php:67
+msgid "Arnelio deck images"
+msgstr "Изображения на палубата на Arnelio"
+
+#: admin/grid.php:35
+msgid "Arnelio.com"
+msgstr "Arnelio.com"
+
+#: lib/tarokina-pro/fields.php:47 lib/tarokina-pro/fields.php:128
+#: lib/tarokina-pro/fields.php:129 lib/tarokina-pro/fields.php:130
+msgid "auto"
+msgstr "автоматично"
+
+#: admin/tarots/vista.php:139
+msgid "Back of the card"
+msgstr "Гърба на картата"
+
+#: admin/tarots/vista.php:186
+msgid "Background"
+msgstr "Фон"
+
+#: admin/tarots/vista.php:187
+msgid "Background color"
+msgstr "Фонов цвят"
+
+#: admin/tarots/vista.php:188
+msgid "Background image"
+msgstr "Фоново изображение"
+
+#: admin/cartas/fields_cartas.php:94 admin/cartas/fields_cartas.php:109
+#: admin/tarots/vista.php:82 public/template/developer/template_init.php:46
+msgid "Basic"
+msgstr "Основен"
+
+#: admin/tarots/vista.php:88
+msgid ""
+"Basic Mode: A single text is used for all references in each card. Example: "
+"Tarot with 3 spreads: present, past and future. Same text for present, past "
+"and future. You will opt for a tarot less precise in the answers but simpler "
+"to create. The final quality will depend on the skill you have in creating "
+"the texts."
+msgstr ""
+"Основен режим: За всички препратки във всяка карта се използва един текст. "
+"Пример: Таро с 3 спреда: настояще, минало и бъдеще. Един и същ текст за "
+"настоящето, миналото и бъдещето. Ще изберете таро, което е по-малко прецизно "
+"в отговорите, но е по-просто за създаване. Крайното качество ще зависи от "
+"уменията, които имате при създаването на текстовете."
+
+#: admin/cartas/fields_cartas.php:98 admin/cartas/fields_cartas.php:122
+#: admin/tarots/vista.php:83 public/template/developer/template_init.php:50
+msgid "Basic reversed"
+msgstr "Основен обърнат"
+
+#: admin/tarots/vista.php:151
+msgid "Below"
+msgstr "Под"
+
+#: admin/tarots/vista.php:137
+msgid "Big"
+msgstr "Голям"
+
+#: admin/fields/fields_options.php:45
+msgid "Button"
+msgstr "Бутон"
+
+#: admin/tarots/vista.php:183
+msgid "Button background-color"
+msgstr "Цвят на фона на бутона"
+
+#: admin/tarots/vista.php:184
+msgid "Button Text Color"
+msgstr "Цвят на текста на бутона"
+
+#: admin/sidebars/sidebar_all.php:20
+msgid "Cancel"
+msgstr "Отмяна на"
+
+#: includes/tarokkina_pro_custom_type.php:149
+msgid "Card"
+msgstr "Карта"
+
+#: includes/tarokkina_pro_custom_type.php:28
+msgid "Card archives"
+msgstr "Архив на картите"
+
+#: admin/tarots/vista.php:105
+msgid "Card Selector"
+msgstr "Селектор на карти"
+
+#: admin/tarots/vista.php:133
+msgid "Card size"
+msgstr "Размер на картата"
+
+#: includes/tarokkina_pro_custom_type.php:20
+#: includes/tarokkina_pro_custom_type.php:197
+#: public/template/texts/developer.php:247
+msgid "Cards"
+msgstr "Карти"
+
+#: includes/tarokkina_pro_custom_type.php:33
+msgid "Cards list"
+msgstr "Списък на картите"
+
+#: includes/tarokkina_pro_custom_type.php:32
+msgid "Cards list navigation"
+msgstr "Навигация в списъка с карти"
+
+#: includes/class-tarokkina_pro-i18n.php:57
+msgid "Change status to completed"
+msgstr "Промяна на статуса в завършен"
+
+#: admin/tarots/vista.php:173
+msgid "Change texts"
+msgstr "Промяна на текстове"
+
+#: admin/tarots/vista.php:177 admin/tarots/vista.php:178
+#: admin/tarots/vista.php:179
+msgid "Change the button's text"
+msgstr "Промяна на текста на бутона"
+
+#: tarokina-pro.php:49
+msgid "Change the order of cards."
+msgstr "Променете реда на картите."
+
+#: lib/tarokina-pro/fields.php:68
+msgid "Change this text."
+msgstr "Променете този текст."
+
+#: public/template/developer/template_init.php:133
+#, php-format
+msgid ""
+"Check how many texts you are missing. You must write %s text on each card."
+msgid_plural ""
+"Check how many texts you are missing. You must write %s texts on each card."
+msgstr[0] ""
+"Проверете колко текста ви липсват. Трябва да напишете %s текст на всяка "
+"карта."
+msgstr[1] ""
+"Проверете колко текста ви липсват. Трябва да напишете %s текста на всяка "
+"карта."
+
+#: admin/fields/fields_options.php:18
+msgid ""
+"Check this if you would like to remove ALL Tarokina Pro data upon plugin "
+"deletion."
+msgstr ""
+"Отбележете това, ако искате да премахнете ВСИЧКИ данни на Tarokina Pro при "
+"изтриване на плъгина."
+
+#: admin/fields/fields_options.php:53
+msgid "Checkout page"
+msgstr "Страница за проверка"
+
+#: admin/tarots/vista.php:107
+msgid "Classic Grid"
+msgstr "Класическа решетка"
+
+#: admin/class-tarokkina_pro-admin.php:269
+#: admin/class-tarokkina_pro-admin.php:716
+msgid "Clear cache"
+msgstr "Изчистване на кеша"
+
+#: admin/sidebars/sidebar_all.php:39
+msgid "Clear cache button. Regenerate images and clear the tarot cache."
+msgstr ""
+"Бутон Изчистване на кеша. Регенерирайте изображенията и изчистете кеша на "
+"таро."
+
+#: includes/elementor-styles_pro.php:18
+msgid "Click on preview changes to see the tarot."
+msgstr "Кликнете върху промените за преглед, за да видите тарото."
+
+#: admin/tarots/vista.php:109
+msgid "Click on the spread cards"
+msgstr "Кликнете върху картите за разпространение"
+
+#: includes/install.php:163 admin/tarots/vista.php:177
+msgid "Click to start your reading"
+msgstr "Кликнете, за да започнете да четете"
+
+#: admin/grid.php:218 lib/tarokina-pro/details_pro.php:108
+msgid "Close"
+msgstr "Затвори"
+
+#: admin/tarots/vista.php:41
+msgid "close"
+msgstr "затворете"
+
+#: admin/tarots/vista.php:180
+msgid "Colors"
+msgstr "Цветове"
+
+#: admin/fields/fields_options.php:12
+msgid "Create 100 tarots"
+msgstr "Създаване на 100 таро"
+
+#: admin/tarots/vista.php:63
+msgid ""
+"Create a deck from the menu > Decks. For example: Marseille, Raider, etc"
+msgstr "Създайте палуба от менюто > Палуби. Например: Марсилия, Рейдър и т.н"
+
+#: admin/fields/fields_options.php:36 admin/fields/fields_options.php:43
+#: admin/fields/fields_content.php:158
+msgid "Deactivate"
+msgstr "Деактивиране на"
+
+#: tarokina-pro.php:52
+msgid "Deactivated plugin"
+msgstr "Деактивирана приставка"
+
+#: includes/tarokkina_pro_custom_type.php:150 admin/tarots/vista.php:79
+msgid "Deck"
+msgstr "Палуба"
+
+#: includes/tarokkina_pro_custom_type.php:72
+#: includes/tarokkina_pro_custom_type.php:196
+msgid "Decks"
+msgstr "Палуби"
+
+#: admin/class-tarokkina_pro-admin.php:85
+#: admin/class-tarokkina_pro-admin.php:120
+#: admin/class-tarokkina_pro-admin.php:135
+#: admin/class-tarokkina_pro-admin.php:150
+#: admin/class-tarokkina_pro-admin.php:165
+#: admin/class-tarokkina_pro-admin.php:180
+#: admin/class-tarokkina_pro-admin.php:195
+#: admin/class-tarokkina_pro-admin.php:210
+#: admin/class-tarokkina_pro-admin.php:225
+#: admin/class-tarokkina_pro-admin.php:240
+msgid "Delete"
+msgstr "Изтриване на"
+
+#: admin/tarots5/escritor5.php:102 admin/tarots2/escritor2.php:102
+#: admin/tarots3/escritor3.php:102 admin/tarots4/escritor4.php:101
+#: admin/tarots8/escritor8.php:102 admin/tarots6/escritor6.php:102
+#: admin/tarots7/escritor7.php:101 admin/tarots9/escritor9.php:102
+#: admin/tarots10/escritor10.php:101 admin/tarots/escritor.php:106
+msgid "Delete tarot"
+msgstr "Изтриване на таро"
+
+#: admin/sidebars/sidebar_all.php:60
+msgid "Demos"
+msgstr "Демонстрации"
+
+#: admin/tarots/vista.php:99
+msgid "Development"
+msgstr "Развитие"
+
+#: admin/tarots/vista.php:100
+msgid "Display a button or the card selector"
+msgstr "Показване на бутон или на селектора за карти"
+
+#: admin/fields/fields_options.php:41
+msgid ""
+"Displays a form or a login button on the tarot page. Visible only to "
+"unregistered users."
+msgstr ""
+"Показва формуляр или бутон за вход в страницата с таро. Видимо само за "
+"нерегистрирани потребители."
+
+#: admin/fields/fields_options.php:34
+msgid ""
+"Displays a header widget on the tarot page with username, links and "
+"countdown. Visible only for registered users."
+msgstr ""
+"Показва уиджет в заглавието на страницата с таро с потребителско име, връзки "
+"и обратно броене. Видима само за регистрирани потребители."
+
+#: admin/tarots/vista.php:148
+msgid "Displays a table listing references by position."
+msgstr "Показва таблица със списък на препратките по позиции."
+
+#: admin/sidebars/sidebar_all.php:57
+msgid "Documentation"
+msgstr "Документация"
+
+#: tarokina-pro.php:30
+msgid ""
+"Does Not Work with your version of PHP. Minimum required php version is 7.0"
+msgstr ""
+"Не работи с вашата версия на PHP. Минималната необходима версия на php е 7.0"
+
+#: admin/sidebars/sidebar_all.php:72
+msgid "Download"
+msgstr "Изтегляне"
+
+#: admin/tarots/vista.php:188
+msgid "Download free images"
+msgstr "Изтегляне на безплатни изображения"
+
+#: includes/tarokkina_pro_custom_type.php:18
+msgid "Edit Card"
+msgstr "Редактиране на картата"
+
+#: includes/tarokkina_pro_custom_type.php:68
+msgid "Edit deck"
+msgstr "Редактиране на палубата"
+
+#: public/template/texts/developer.php:122
+#: public/template/texts/developer.php:132
+#: public/template/texts/developer.php:222
+#: public/template/texts/developer.php:232
+msgid "Empty"
+msgstr "Празен"
+
+#: includes/class-tarokkina_pro-i18n.php:56
+msgid "Enabled"
+msgstr "Разрешено"
+
+#: admin/fields/fields_options.php:13
+msgid "Enabling this option will force all images to load with https."
+msgstr ""
+"Активирането на тази опция ще принуди всички изображения да се зареждат с "
+"https."
+
+#: admin/class-tarokkina_pro-admin.php:644
+msgid "Enter a valid license key"
+msgstr "Въведете валиден лицензен ключ"
+
+#: admin/fields/fields_content.php:87
+msgid "Enter your license key"
+msgstr "Въведете лицензионния си ключ"
+
+#: admin/fields/fields_options.php:15
+#, php-format
+msgid "Example 1: %s - reversed"
+msgstr "Пример 1: %s - обърнат"
+
+#: admin/fields/fields_options.php:15
+#, php-format
+msgid "Example 2: reversed - %s"
+msgstr "Пример 2: обърнат - %s"
+
+#: admin/cartas/fields_cartas.php:106 admin/tarots/vista.php:84
+#: public/template/developer/template_init.php:54
+msgid "Expert"
+msgstr "Експерт"
+
+#: admin/tarots/vista.php:94
+msgid ""
+"Expert Mode: Multiple texts are used per card (1 text per reference in each "
+"card). You will get a very precise tarot in the answers. There are many "
+"texts but the final result will be very accurate, since each reference will "
+"have its own text."
+msgstr ""
+"Експертен режим: Използват се няколко текста на карта (по 1 текст на "
+"препратка във всяка карта). Ще получите много точно таро в отговорите. "
+"Текстовете са много, но крайният резултат ще бъде много точен, тъй като "
+"всяка препратка ще има свой собствен текст."
+
+#: admin/cartas/fields_cartas.php:119 admin/tarots/vista.php:85
+#: public/template/developer/template_init.php:58
+msgid "Expert reversed"
+msgstr "Експерт обърна"
+
+#: includes/class-tarokkina_pro-i18n.php:49
+msgid "Expired"
+msgstr "Изтекъл срок на валидност"
+
+#: includes/class-tarokkina_pro-i18n.php:54
+msgid "Expires"
+msgstr "Срокът на валидност изтича на"
+
+#: includes/tarokkina_pro_custom_type.php:31
+msgid "Filter Cards list"
+msgstr "Списък с карти за филтриране"
+
+#: includes/install.php:162
+msgid "Final card"
+msgstr "Финална карта"
+
+#: admin/tarots/vista.php:143
+msgid "First tab opened"
+msgstr "Първи отворен раздел"
+
+#: admin/fields/fields_options.php:14
+msgid "Force images without compression only in the tarot result."
+msgstr "Принудителни изображения без компресия само в резултата от таро."
+
+#: admin/fields/fields_options.php:13
+msgid "Force SSL on images"
+msgstr "Принудително използване на SSL за изображения"
+
+#: admin/fields/fields_options.php:44
+msgid "Form"
+msgstr "Формуляр"
+
+#: admin/grid.php:177
+msgid "Free"
+msgstr "Безплатно"
+
+#: includes/install.php:151 admin/tarots/vista.php:158
+msgid "Future"
+msgstr "Бъдеще"
+
+#: admin/fields/fields_options.php:10
+msgid "General"
+msgstr "Обща информация"
+
+#: includes/tarokkina_pro_custom_type.php:11
+msgctxt "General name"
+msgid "Cards"
+msgstr "Карти"
+
+#: admin/tarots/vista.php:178
+msgid "Get a new‌ reading text button"
+msgstr "Получаване на нов бутон за четене на текст"
+
+#: includes/tarokkina_pro_custom_type.php:22
+msgid "Go to install demo tarot"
+msgstr "Отидете да инсталирате демо таро"
+
+#: admin/fields/fields_options.php:12 admin/fields/fields_options.php:32
+#: admin/tarots/vista.php:76 admin/tarots/vista.php:81
+#: admin/tarots/vista.php:105 admin/tarots/vista.php:132
+#: admin/tarots/vista.php:147 admin/tarots/vista.php:176
+#: admin/tarots/vista.php:183 admin/tarots/vista.php:187
+#: admin/tarots/vista.php:193
+msgid "Help"
+msgstr "Помощ"
+
+#: lib/tarokina-pro/fields.php:110 lib/tarokina-pro/fields.php:111
+#: lib/tarokina-pro/fields.php:112 lib/tarokina-pro/fields.php:113
+#: lib/tarokina-pro/fields.php:114 lib/tarokina-pro/fields.php:115
+msgid "hidden"
+msgstr "скрит"
+
+#: admin/grid.php:199 lib/tarokina-pro/details_pro.php:92
+msgid "Homepage"
+msgstr "Начална страница"
+
+#: admin/tarots/vista.php:108
+msgid "Horizontal Shuffle"
+msgstr "Хоризонтално разбъркване"
+
+#. Author URI of the plugin
+msgid "https://arnelio.com/"
+msgstr "https://arnelio.com/"
+
+#. URI of the plugin
+msgid "https://arnelio.com/downloads/tarokina-pro/"
+msgstr "https://arnelio.com/downloads/tarokina-pro/"
+
+#: lib/insert-areas.php:12
+msgid "ID of the product you have created in ecommerce"
+msgstr "Идентификатор на продукта, който сте създали в електронната търговия"
+
+#: admin/fields/fields_options.php:14
+msgid ""
+"If the uploaded images are too large, they may slow down the page loading "
+"time."
+msgstr ""
+"Ако качените изображения са твърде големи, те могат да забавят времето за "
+"зареждане на страницата."
+
+#: admin/sidebars/sidebar_all.php:19
+msgid ""
+"If you delete a tarot, all texts created for that tarot will be deleted."
+msgstr ""
+"Ако изтриете таро, всички текстове, създадени за това таро, ще бъдат изтрити."
+
+#: admin/tarots/vista.php:115
+msgid ""
+"If you have purchased any add-ons, you can add new spreads from this "
+"selector."
+msgstr "Ако сте закупили добавки, можете да добавяте нови от този селектор."
+
+#: admin/fields/fields_options.php:12
+msgid "If you need to create more than ten tarots, enable this option."
+msgstr "Ако трябва да създадете повече от десет таро, разрешете тази опция."
+
+#: includes/tarokkina_pro_custom_type.php:137
+msgid "Image"
+msgstr "Изображение"
+
+#: includes/tarokkina_pro_custom_type.php:148
+msgid "image"
+msgstr "изображение"
+
+#: admin/grid.php:107 admin/grid.php:182 lib/tarokina-pro/details_pro.php:17
+#: lib/tarokina-pro/details_pro.php:79
+msgid "inactive"
+msgstr "неактивен"
+
+#: admin/grid.php:207 lib/tarokina-pro/details_pro.php:99
+msgid "Info"
+msgstr "Информация"
+
+#: admin/fields/fields_options.php:47
+msgid "Information text to unlock the tarot by purchasing a product."
+msgstr "Информационен текст за отключване на таро чрез закупуване на продукт."
+
+#: includes/tarokkina_pro_custom_type.php:29
+msgid "Insert into Card"
+msgstr "Поставете в картата"
+
+#: admin/tarots/vista.php:44
+msgid "Install"
+msgstr "Инсталиране на"
+
+#: tarokina-pro.php:51
+msgid "Invalid license"
+msgstr "Невалиден лиценз"
+
+#: admin/fields/fields_content.php:287
+msgid "Invalid license."
+msgstr "Невалиден лиценз."
+
+#: admin/class-tarokkina_pro-admin.php:716
+msgid "It is recommended to clear the cache following an update."
+msgstr "Препоръчително е да изчистите кеша след актуализация."
+
+#: includes/class-tarokkina_pro-i18n.php:51 admin/grid.php:171
+#: admin/class-tarokkina_pro-admin.php:384
+#: admin/class-tarokkina_pro-admin.php:644 lib/tarokina-pro/details_pro.php:72
+msgid "License"
+msgstr "Лиценз"
+
+#: admin/fields/fields_content.php:111
+msgid "License Activated"
+msgstr "Активиран лиценз"
+
+#: admin/fields/fields_content.php:56 admin/fields/fields_content.php:79
+msgid "Licensing"
+msgstr "Лицензиране"
+
+#: admin/fields/fields_options.php:51
+msgid "Link"
+msgstr "Връзка"
+
+#: public/template/edd/template_click.php:290
+#: public/template/edd/template_init.php:238
+#: public/template/woo/template_click.php:283
+#: public/template/woo/template_init.php:251
+msgid "Login"
+msgstr "Вход"
+
+#: admin/fields/fields_options.php:41
+msgid "Login from tarot"
+msgstr "Вход от таро"
+
+#: public/template/edd/template_click.php:81
+#: public/template/edd/template_click.php:111
+#: public/template/edd/template_init.php:95
+#: public/template/edd/template_init.php:123
+#: public/template/woo/template_click.php:80
+#: public/template/woo/template_click.php:109
+#: public/template/woo/template_init.php:95
+#: public/template/woo/template_init.php:124
+msgid "Logout"
+msgstr "Излизане от системата"
+
+#: admin/fields/fields_options.php:34
+msgid "Logout from tarot"
+msgstr "Излизане от таро"
+
+#: admin/sidebars/sidebar_all.php:33 admin/tarots/vista.php:111
+msgid "Maximum number of visible cards in the selector"
+msgstr "Максимален брой видими карти в селектора"
+
+#: admin/tarots/vista.php:136
+msgid "Medium"
+msgstr "Среден"
+
+#: admin/tarots/vista.php:189
+msgid "Mix - Color Overlay"
+msgstr "Смесване - наслагване на цветове"
+
+#: admin/tarots/vista.php:189
+msgid "Mix between image and background-color"
+msgstr "Смесване на изображение и цвят на фона"
+
+#: admin/tarots/vista.php:81 public/template/developer/template_init.php:129
+msgid "Mode"
+msgstr "Режим"
+
+#: admin/tarots/vista.php:195
+msgid "Modify the spacing between the spread and the card selector."
+msgstr "Променете разстоянието между разпръсквача и селектора за карти."
+
+#: lib/tarokina-pro/fields.php:129
+msgid ""
+"Modify the top and bottom margins of the tarot within the WordPress content."
+msgstr ""
+"Променете горните и долните полета на тарото в съдържанието на WordPress."
+
+#: admin/tarots/vista.php:194
+msgid ""
+"Modify your tarot so that it is narrower within your page. Example: 550px"
+msgstr ""
+"Променете тарото, така че да е по-тясно в рамките на страницата ви. Пример: "
+"550px"
+
+#: admin/sidebars/sidebar_all.php:31
+msgid "More information"
+msgstr "Повече информация"
+
+#: admin/grid.php:164 admin/tarots/vista.php:76
+#: lib/tarokina-pro/details_pro.php:64
+msgid "Name"
+msgstr "Име"
+
+#: includes/tarokkina_pro_custom_type.php:17
+msgid "New Card"
+msgstr "Нова карта"
+
+#: includes/tarokkina_pro_custom_type.php:71
+msgid "New deck"
+msgstr "Нова палуба"
+
+#: includes/install.php:164 admin/tarots/vista.php:178
+msgid "New reading"
+msgstr "Ново четене"
+
+#. Description of the plugin
+#: lib/tarokina-pro/details_pro.php:102
+msgid ""
+"New Tarot plugin. Intuitive and easy to use. Provides accurate tarot "
+"readings on WordPress."
+msgstr ""
+"Нова приставка за Таро. Интуитивен и лесен за използване. Осигурява точни "
+"показания на таро в WordPress."
+
+#: public/class-tarokkina_pro-public.php:314 admin/cartas/fields_cartas.php:73
+#: lib/tarokina-pro/fields.php:68
+msgid "No"
+msgstr "Не"
+
+#: includes/tarokkina_pro_custom_type.php:23
+msgid "No Cards found in Trash."
+msgstr "Не са намерени карти в кошчето."
+
+#: includes/tarokkina_pro_custom_type.php:22
+msgid "No Cards. Install the demo tarot or add cards to a deck."
+msgstr ""
+"Няма карти. Инсталирайте демонстрационната версия на таро или добавете карти "
+"към тесте."
+
+#: includes/tarokkina_pro_custom_type.php:73
+msgid "No decks found"
+msgstr "Не са намерени палуби"
+
+#: admin/tarots/vista.php:29
+msgid "No decks."
+msgstr "Няма палуби."
+
+#: admin/tarots/vista.php:61
+msgid "No Tarot"
+msgstr "Не Таро"
+
+#: admin/sidebars/sidebar_all.php:37
+msgid "Now, you can select cards directly from the spread itself."
+msgstr "Сега можете да избирате карти директно от самото разпределение."
+
+#: admin/sidebars/sidebar_all.php:58
+msgid "Offers"
+msgstr "Оферти"
+
+#: includes/class-tarokkina_pro-i18n.php:48
+msgid "On hold"
+msgstr "В режим на изчакване"
+
+#: admin/tarots/vista.php:141
+msgid "Open tabs in the result"
+msgstr "Отворени раздели в резултата"
+
+#: admin/tarots/vista.php:141
+msgid "Opening or closing the tabs on the result."
+msgstr "Отваряне или затваряне на разделите в резултата."
+
+#: admin/fields/fields_options.php:8
+msgid "Options"
+msgstr "Опции"
+
+#: tarokina-pro.php:50
+msgid "order"
+msgstr "поръчка"
+
+#: public/template/edd/template_click.php:81
+#: public/template/edd/template_click.php:111
+#: public/template/edd/template_init.php:95
+#: public/template/edd/template_init.php:123
+#: public/template/woo/template_click.php:80
+#: public/template/woo/template_click.php:109
+#: public/template/woo/template_init.php:95
+#: public/template/woo/template_init.php:124
+msgid "Orders"
+msgstr "Поръчки"
+
+#: includes/install.php:150 admin/tarots/vista.php:156
+msgid "Past"
+msgstr "Минало"
+
+#: admin/class-tarokkina_pro-admin.php:1119
+msgid ""
+"Please compress the folder. Please ensure that the images are located in the "
+"root of the ZIP file and not in a subfolder."
+msgstr ""
+"Моля, компресирайте папката. Уверете се, че изображенията се намират в "
+"корена на ZIP файла, а не в подпапка."
+
+#: admin/class-tarokkina_pro-admin.php:1115
+msgid ""
+"Please create an empty folder and enter the images of the cards you wish to "
+"upload."
+msgstr ""
+"Моля, създайте празна папка и въведете изображенията на картите, които "
+"искате да качите."
+
+#: admin/class-tarokkina_pro-admin.php:1118
+msgid ""
+"Please enter the name of each image with blank spaces. As an example, "
+"consider the following: The file name for the image of the Hanged Man is "
+"\"The Hanged Man.jpg.\""
+msgstr ""
+"Моля, въведете името на всяко изображение с празни полета. Като пример, "
+"разгледайте следното: Името на файла с изображението на обесения е \"The "
+"Hanged Man.jpg\""
+
+#: admin/class-tarokkina_pro-admin.php:1113
+msgid "Please find below instructions on how to create the ZIP file"
+msgstr "По-долу ще намерите инструкции за създаване на файла ZIP"
+
+#: admin/class-tarokkina_pro-admin.php:650
+msgid "Please install Easy Digital Downloads"
+msgstr "Моля, инсталирайте Easy Digital Downloads"
+
+#: admin/class-tarokkina_pro-admin.php:656
+msgid "Please install WooCommerce"
+msgstr "Моля, инсталирайте WooCommerce"
+
+#: admin/class-tarokkina_pro-admin.php:761
+#, php-format
+msgid ""
+"Please rate %1$s <a href=\"%2$s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href=\"%3$s\" "
+"target=\"_blank\" rel=\"noopener\">arnelio.com</a> to help us spread the "
+"word. Thank you from the Arnelio team!"
+msgstr ""
+"Моля, оценете %1$s <a href=\"%2$s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">&#9733;&#9733;&#9733;&#9733;&#9733;</a> на <a href=\"%3$s\" "
+"target=\"_blank\" rel=\"noopener\">arnelio.com</a>, за да ни помогнете да "
+"разпространим информацията. Благодарим ви от екипа на Arnelio!"
+
+#: admin/grid.php:27
+msgid ""
+"Please rate Tarokina Pro on Arnelio.com to help us spread the word. Thank "
+"you from the Arnelio team!"
+msgstr ""
+"Моля, дайте оценка на Tarokina Pro в Arnelio.com, за да ни помогнете да "
+"разпространим информацията. Благодарим ви от екипа на Arnelio!"
+
+#: admin/class-tarokkina_pro-admin.php:1102
+msgid "Please upload a deck of cards in a zip file."
+msgstr "Моля, качете тесте карти в zip файл."
+
+#: includes/install.php:161 admin/tarots/vista.php:176
+msgid "Positions"
+msgstr "Позиции"
+
+#: admin/tarots/vista.php:176
+msgid "Positions text"
+msgstr "Текст на позициите"
+
+#: includes/install.php:149 admin/tarots/vista.php:154
+msgid "Present"
+msgstr "Настоящето"
+
+#: admin/fields/fields_options.php:54
+msgid "Product page"
+msgstr "Страница на продукта"
+
+#: admin/tarots/vista.php:102
+msgid "Push start button"
+msgstr "Бутон за стартиране с натискане"
+
+#: includes/class-tarokkina_pro-i18n.php:52
+msgid "Reactivate tarot"
+msgstr "Реактивиране на таро"
+
+#: admin/class-tarokkina_pro-admin.php:268
+msgid "Regenerate images and clear the tarot cache."
+msgstr "Регенерирайте изображенията и изчистете кеша на таро."
+
+#: includes/tarokkina_pro_custom_type.php:26
+msgid "Remove cover image"
+msgstr "Премахване на изображението на корицата"
+
+#: admin/tarots/vista.php:76
+msgid "Required"
+msgstr "Изисква се"
+
+#: admin/cartas/write-flip-subfields.php:87
+msgid "Reversed"
+msgstr "Обърнат"
+
+#: public/template/texts/developer.php:150
+#: public/template/texts/developer.php:210
+#: public/template/texts/developer.php:218
+msgid "reversed"
+msgstr "обърнат"
+
+#: admin/tarots/vista.php:91
+msgid ""
+"Reversed Basic Mode: 2 texts are used for all references on each card (A or "
+"B), if the card is reversed, the alternative text B will be used. Example: "
+"Tarot with 3 spreads: present, past and future. 1 text (A or B) for present, "
+"past and future. The final quality will depend on the skill you have in "
+"elaborating the 2 texts."
+msgstr ""
+"Обърнат основен режим: за всички препратки на всяка карта се използват 2 "
+"текста (A или B), ако картата е обърната, ще се използва алтернативният "
+"текст B. Пример: Таро с 3 спреда: настояще, минало и бъдеще. 1 текст (А или "
+"В) за настояще, минало и бъдеще. Крайното качество ще зависи от умението, "
+"което имате при разработването на 2-те текста."
+
+#: admin/tarots/vista.php:97
+msgid ""
+"Reversed expert Mode: Multiple texts are used per card (2 texts per "
+"reference on each card). If the card is reversed, the alternative text B "
+"will be used on each reference. There are twice as many texts as in Expert "
+"mode."
+msgstr ""
+"Обърнат експертен режим: Използват се няколко текста на карта (по 2 текста "
+"на референция на всяка карта). Ако картата е обърната, за всяка справка се "
+"използва алтернативният текст B. Текстовете са два пъти повече, отколкото в "
+"режим \"Експерт\"."
+
+#: admin/grid.php:25
+msgid "Review"
+msgstr "Преглед на"
+
+#: admin/fields/fields_content.php:122
+msgid "Save"
+msgstr "Запазете"
+
+#: includes/tarokkina_pro_custom_type.php:21
+#: includes/tarokkina_pro_custom_type.php:66
+msgid "Search"
+msgstr "Търсене"
+
+#: admin/class-tarokkina_pro-admin.php:662 admin/fields/fields_options.php:29
+msgid "Select"
+msgstr "Изберете"
+
+#: admin/class-tarokkina_pro-admin.php:333
+msgid "Select a deck and set an image."
+msgstr "Изберете палуба и задайте изображение."
+
+#: admin/tarots/vista.php:80
+msgid ""
+"Select a deck. If none are available, you must create one first. Visit the "
+"cards within the selected deck to generate the necessary texts."
+msgstr ""
+"Изберете палуба. Ако няма налична такава, първо трябва да създадете такава. "
+"Посетете картите в избраното тесте, за да генерирате необходимите текстове."
+
+#: admin/tarots/vista.php:115
+msgid "Select a spread"
+msgstr "Изберете разпространение"
+
+#: admin/class-tarokkina_pro-admin.php:341
+msgid "Select a tarot:"
+msgstr "Изберете таро:"
+
+#: admin/fields/fields_options.php:28
+msgid "Select Ecommerce"
+msgstr "Изберете Електронна търговия"
+
+#: admin/class-tarokkina_pro-admin.php:662
+msgid ""
+"Select which e-commerce plugin you want to work with, Woocommerce or Easy "
+"Digital Downloads."
+msgstr ""
+"Изберете с кой плъгин за електронна търговия искате да работите - "
+"Woocommerce или Easy Digital Downloads."
+
+#: includes/tarokkina_pro_custom_type.php:25
+msgid "Set cover image"
+msgstr "Задаване на изображение на корицата"
+
+#: admin/tarots/vista.php:77
+msgid "Shortcode"
+msgstr "Кратък код"
+
+#: admin/tarots/vista.php:147
+msgid "Show Positions"
+msgstr "Показване на позициите"
+
+#: admin/tarots/vista.php:103
+msgid "Show the card selector"
+msgstr "Показване на селектора на карти"
+
+#: admin/tarots/vista.php:179
+msgid "Shuffle"
+msgstr "Разбъркване"
+
+#: admin/tarots/vista.php:179
+msgid "Shuffle text"
+msgstr "Разбъркване на текста"
+
+#: includes/tarokkina_pro_custom_type.php:12
+msgctxt "Singular name"
+msgid "Card"
+msgstr "Карта"
+
+#: admin/tarots/vista.php:135
+msgid "Small"
+msgstr "Малък"
+
+#: admin/tarots/vista.php:191
+msgid "SPACE"
+msgstr "SPACE"
+
+#: admin/tarots/vista.php:195
+msgid "Spread Margin Bottom"
+msgstr "Разпространение на маржа отдолу"
+
+#: admin/tarots/vista.php:100
+msgid "Start"
+msgstr "Начало"
+
+#: admin/tarots/vista.php:177
+msgid "Start button text"
+msgstr "Текст на бутона за стартиране"
+
+#: includes/install.php:160 admin/tarots/vista.php:175
+#: admin/tarots/vista.php:175
+msgid "Subtitle"
+msgstr "Подзаглавие"
+
+#: admin/tarots/vista.php:182
+msgid "Subtitle color"
+msgstr "Цвят на субтитрите"
+
+#: admin/fields/fields_options.php:57
+msgid "System Status"
+msgstr "Състояние на системата"
+
+#. Name of the plugin
+msgid "Tarokina Pro"
+msgstr "Tarokina Pro"
+
+#: includes/class-tarokkina_pro-i18n.php:50
+msgid "Tarokina Pro not found!"
+msgstr "Tarokina Pro не е намерен!"
+
+#: admin/fields/fields_options.php:26
+msgid "Tarokina Restriction"
+msgstr "Ограничение на Tarokina"
+
+#: admin/class-tarokkina_pro-admin.php:650
+msgid "Tarokina Restriction requires Easy Digital Downloads to function."
+msgstr ""
+"Ограничението на Tarokina изисква Easy Digital Downloads, за да функционира."
+
+#: admin/class-tarokkina_pro-admin.php:656
+msgid "Tarokina Restriction requires WooCommerce to function."
+msgstr "Ограничението на Tarokina изисква WooCommerce, за да функционира."
+
+#: lib/tarokina-pro/fields.php:49
+msgid "Tarokina Spreads"
+msgstr "Tarokina Spreads"
+
+#: includes/tarokkina_pro_custom_type.php:230
+#: admin/cartas/write-flip-subfields.php:14
+#: admin/cartas/write-eflip-subfields.php:17
+#: admin/cartas/write-expert-subfields.php:17
+#: admin/cartas/write-basic-subfields.php:15 admin/tarots/vista.php:72
+msgid "Tarot"
+msgstr "Таро"
+
+#: admin/tarots/vista.php:140
+msgid "Tarot Card Back."
+msgstr "Карта Таро Назад."
+
+#: includes/tarokkina_pro_custom_type.php:24
+msgid "Tarot card image"
+msgstr "Изображение на картата Таро"
+
+#: public/template/developer/template_init.php:68
+#: public/template/edd/template_click.php:23
+#: public/template/edd/template_init.php:26
+#: public/template/woo/template_click.php:23
+#: public/template/woo/template_init.php:23
+msgid "Tarot is not available"
+msgstr "Таро не е налично"
+
+#: admin/tarots/escritor.php:24
+msgid "Tarot list"
+msgstr "Списък на Таро"
+
+#: admin/tarots/vista.php:193
+msgid "Tarot Margin Bottom"
+msgstr "Таро марж Bottom"
+
+#: admin/tarots/vista.php:192
+msgid "Tarot Margin Top"
+msgstr "Таро Марж Топ"
+
+#: includes/install.php:159 admin/tarots/vista.php:174
+msgid "Tarot title"
+msgstr "Заглавие на Таро"
+
+#: admin/tarots/vista.php:194
+msgid "Tarot Width"
+msgstr "Широчина на Таро"
+
+#: admin/class-tarokkina_pro-admin.php:373
+#: admin/class-tarokkina_pro-admin.php:792
+#: admin/class-tarokkina_pro-admin.php:794
+#: admin/class-tarokkina_pro-admin.php:796
+#: admin/class-tarokkina_pro-admin.php:798
+#: admin/class-tarokkina_pro-admin.php:800
+#: admin/class-tarokkina_pro-admin.php:802
+#: admin/class-tarokkina_pro-admin.php:804
+#: admin/class-tarokkina_pro-admin.php:806
+#: admin/class-tarokkina_pro-admin.php:808
+#: admin/class-tarokkina_pro-admin.php:810
+#: admin/class-tarokkina_pro-admin.php:826 admin/fields/fields_options.php:32
+#: admin/tarots/escritor.php:22 admin/tarots/vista.php:55
+#: admin/tarots/vista.php:71
+msgid "Tarots"
+msgstr "Таровете"
+
+#: includes/tarokkina_pro_custom_type.php:64
+msgctxt "taxonomy general name"
+msgid "Decks"
+msgstr "Палуби"
+
+#: includes/tarokkina_pro_custom_type.php:65
+msgctxt "taxonomy singular name"
+msgid "Deck"
+msgstr "Палуба"
+
+#: admin/class-tarokkina_pro-admin.php:324
+msgid "Texts"
+msgstr "Текстове"
+
+#: admin/class-tarokkina_pro-admin.php:1116
+msgid "The folder name will be used as the deck name."
+msgstr "Името на папката ще се използва като име на палубата."
+
+#: admin/class-tarokkina_pro-admin.php:1117
+msgid "The name of each image will be used as the title of each card."
+msgstr ""
+"Името на всяко изображение ще бъде използвано като заглавие на всяка карта."
+
+#: admin/fields/fields_options.php:32
+msgid "The parameters are in each tarot created."
+msgstr "Параметрите са във всяко създадено таро."
+
+#: admin/tarots/vista.php:184 lib/tarokina-pro/fields.php:119
+msgid "The theme button is loaded by default."
+msgstr "Бутонът на темата се зарежда по подразбиране."
+
+#: admin/class-tarokkina_pro-admin.php:340
+#, php-format
+msgctxt ""
+"The variable \"%s\" represents the name of the deck to which the card "
+"belongs."
+msgid "List of tarots used with the %s deck"
+msgstr "Списък на таровете, използвани с колодата %s"
+
+#: admin/fields/fields_options.php:37
+msgid "Theme 1"
+msgstr "Тема 1"
+
+#: admin/fields/fields_options.php:38
+msgid "Theme 2"
+msgstr "Тема 2"
+
+#: admin/class-tarokkina_pro-admin.php:372
+#, php-format
+msgid ""
+"There is no tarot with the %s deck selected. Please go to the Tarots section "
+"and assign the %s deck in any tarot"
+msgstr ""
+"Няма избрано таро с колодата %s. Моля, отидете в раздела Таро и задайте "
+"колодата %s в някое таро"
+
+#. the plugin name
+#: admin/fields/fields_content.php:297
+#, php-format
+msgid "This appears to be an invalid license key for %s."
+msgstr "Изглежда, че това е невалиден лицензионен ключ за %s."
+
+#: admin/fields/fields_options.php:47
+#, php-format
+msgid "This content is restricted to buyers of %s"
+msgstr "Това съдържание е достъпно само за купувачите на %s"
+
+#: public/template/edd/template_click.php:275
+#: public/template/edd/template_init.php:206
+#: public/template/woo/template_click.php:267
+#: public/template/woo/template_init.php:219
+#, php-format
+msgid "This content is restricted to buyers of %s."
+msgstr "Това съдържание е достъпно само за купувачите на %s."
+
+#: public/template/developer/template_init.php:93
+msgid "This feature is only activated if you are an administrator."
+msgstr "Тази функция се активира само ако сте администратор."
+
+#: public/template/edd/template_click.php:132
+#: public/template/edd/template_init.php:145
+#: public/template/woo/template_click.php:134
+#: public/template/woo/template_init.php:148
+msgid ""
+"This message is only visible to WordPress admins. Open your tarot in a new "
+"incognito window or log out of your administrator session to activate "
+"Tarokina Restriction."
+msgstr ""
+"Това съобщение е видимо само за администраторите на WordPress. Отворете таро "
+"в нов инкогнито прозорец или излезте от сесията на администратора, за да "
+"активирате ограничението на таро."
+
+#: admin/tarots/vista.php:111
+msgid ""
+"This setting only affects the amount of cards that are visible in the "
+"selector, but all cards in the assigned deck remain accessible. Every time "
+"the webpage refreshes, new images are loaded."
+msgstr ""
+"Тази настройка влияе само на броя на картите, които се виждат в селектора, "
+"но всички карти в определеното тесте остават достъпни. При всяко опресняване "
+"на уебстраницата се зареждат нови изображения."
+
+#: admin/tarots/vista.php:174
+msgid "Title"
+msgstr "Заглавие"
+
+#: admin/tarots/vista.php:181
+msgid "Title color"
+msgstr "Цвят на заглавието"
+
+#: admin/tarots/vista.php:185
+msgid "Title color in the result"
+msgstr "Цвят на заглавието в резултата"
+
+#: admin/tarots/vista.php:65
+msgid ""
+"To create a tarot, fill in a simple form by clicking on the < Add Tarot > "
+"button. You can create several tarots with the same deck. Save changes. Now "
+"you can write the texts of your new tarot by editing each card."
+msgstr ""
+"За да създадете таро, попълнете прост формуляр, като кликнете върху бутона < "
+"Добави таро >. Можете да създадете няколко тарота с една и съща колода. "
+"Запишете промените. Сега можете да напишете текстовете на новото си таро, "
+"като редактирате всяка карта."
+
+#: admin/tarots/vista.php:58
+msgid "Try our 22 Major Arcana deck in a sample data tarot"
+msgstr "Опитайте нашата колода от 22 главни аркана в примерни данни за таро"
+
+#: admin/fields/fields_options.php:16
+msgid "Uninstall Tarokina Pro"
+msgstr "Деинсталиране на Tarokina Pro"
+
+#: includes/tarokkina_pro_custom_type.php:69
+msgid "Updated deck"
+msgstr "Обновена палуба"
+
+#: includes/tarokkina_pro_custom_type.php:30
+msgid "Uploaded to this Card"
+msgstr "Качени на тази карта"
+
+#: admin/tarots/vista.php:77
+msgid ""
+"Upon completion of this form and saving changes, a shortcode will be created."
+" Paste this code on any page to activate this tarot."
+msgstr ""
+"При попълване на този формуляр и запазване на промените ще бъде създаден "
+"кратък код. Поставете този код на всяка страница, за да активирате този таро."
+
+#: includes/tarokkina_pro_custom_type.php:27
+msgid "Use as cover image"
+msgstr "Използване като изображение на корицата"
+
+#: admin/tarots/vista.php:99
+msgid ""
+"Use the development view to identify the cards containing text. This "
+"function is only accessible in the public section if you are logged in as an "
+"administrator."
+msgstr ""
+"Използвайте изгледа за развитие, за да идентифицирате картите, съдържащи "
+"текст. Тази функция е достъпна в публичния раздел само ако сте влезли като "
+"администратор."
+
+#: admin/sidebars/sidebar_all.php:31
+msgid ""
+"Use Woocommerce or EDD and earn money by charging for your tarot readings."
+msgstr ""
+"Използвайте Woocommerce или EDD и печелете пари, като събирате такси за "
+"вашите таро показания."
+
+#: admin/grid.php:191 lib/tarokina-pro/details_pro.php:84
+msgid "Version"
+msgstr "Версия"
+
+#: includes/tarokkina_pro_custom_type.php:19
+msgid "View Card"
+msgstr "Преглед на картата"
+
+#: includes/class-tarokkina_pro-i18n.php:55
+msgid "View progress →"
+msgstr "Преглед на напредъка →"
+
+#: lib/tarokina-pro/fields.php:41
+msgid "View Selectors"
+msgstr "Селектори за преглед"
+
+#: lib/tarokina-pro/fields.php:12
+msgid ""
+"Warning: Do not use special characters. For example: ü,ñ,ý,*,š,ā. If you "
+"change it, you will need to paste the shortcode back into your page."
+msgstr ""
+"Предупреждение: Не използвайте специални символи. Например: ü,ñ,ý,*,š,ā. Ако "
+"го промените, ще трябва да поставите шорткода обратно в страницата си."
+
+#: lib/tarokina-pro/fields.php:41
+msgid "Ways to choose the cards during a consultation."
+msgstr "Начини за избор на картите по време на консултация."
+
+#: admin/grid.php:37
+msgid "We notify you about discounts and updates."
+msgstr "Уведомяваме ви за отстъпки и актуализации."
+
+#: admin/grid.php:202 lib/tarokina-pro/details_pro.php:95
+msgid "Website"
+msgstr "Уебсайт"
+
+#: admin/fields/fields_options.php:51
+#, php-format
+msgid "When clicking %s, redirect to the checkout or the product page."
+msgstr ""
+"Когато щракнете върху %s, пренасочете към страницата на касата или "
+"страницата на продукта."
+
+#: admin/class-tarokkina_pro-admin.php:325
+msgid "Write down your readings or interpretations for this card."
+msgstr "Запишете вашите разчитания или тълкувания за тази карта."
+
+#: public/class-tarokkina_pro-public.php:311 admin/cartas/fields_cartas.php:70
+#: lib/tarokina-pro/fields.php:66
+msgid "Yes"
+msgstr "Да"
+
+#: admin/tarots/vista.php:140
+msgid "You can also insert the image in the Tarot spread."
+msgstr ""
+"Можете също така да вмъкнете изображението в разпространението на Таро."
+
+#: admin/tarots/vista.php:133
+msgid ""
+"You can Increase the size of the cards. Specific sizes depend on the "
+"selected spread."
+msgstr ""
+"Можете да увеличите размера на картите. Конкретните размери зависят от "
+"избраното разпределение."
+
+#: admin/tarots/vista.php:174 admin/tarots/vista.php:175
+#: lib/tarokina-pro/fields.php:112
+msgid "You can leave this field empty to disable it"
+msgstr "Можете да оставите това поле празно, за да го деактивирате"
+
+#: admin/fields/fields_content.php:292
+msgid "Your license is not active for this URL."
+msgstr "Лицензът ви не е активен за този URL адрес."
+
+#. the license key expiration date
+#: admin/fields/fields_content.php:276
+#, php-format
+msgid "Your license key expired on %s."
+msgstr "Лицензионният ви ключ е изтекъл на %s."
+
+#: admin/fields/fields_content.php:283
+msgid "Your license key has been disabled."
+msgstr "Лицензионният ви ключ е бил деактивиран."
+
+#: admin/fields/fields_content.php:301
+msgid "Your license key has reached its activation limit."
+msgstr "Лицензионният ви ключ е достигнал лимита си за активиране."

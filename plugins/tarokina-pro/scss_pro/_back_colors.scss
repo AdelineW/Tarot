@@ -1,0 +1,92 @@
+///////////////////////   VARIABLES    ///////////////////////////
+
+/////////////////////////////////////////////////////////////////
+
+$primary-color :#742C7A !default;
+$arnelio_color: #ff6d6f !default;
+$arnelio_cartas: #2271b1;
+
+
+
+// Los 3 Colores Baraja, cartas y Tarots
+$c_barajas: $primary-color;
+$c_cartas: $primary-color;
+$c_tarots: $primary-color;
+
+
+$oro: #f3d97b;
+$color3 : #FDC514 !default;
+$color-verde: #4DA69B !default;
+$color_cartas: #80d580;
+$color_tarot: #8b9ee8;
+
+$color_estilos : #929292 !default;
+$color1_fondo : #fbfbfc !default;
+$color_wordpress: #2271b1 !default;
+$color_wordpress_h :#0071a1 !default;
+$fondo_wordpress_osc :#232829 !default;
+$fondo_wordpress_cla :#32373c !default;
+$color2: #FF4A8E !default;
+
+$circles : #2c3338;
+
+
+$color_rojo  : #AD2D41 !default;
+$fondo_gris  : #f8f6f9 !default;
+$color_text  : #9f9f9f !default;
+
+$Titles_portada : #9a9fa3;
+$form_titles : $primary-color;
+$form_text   : $color_text;
+$color_campos: #818990 ;
+
+$icon_info: $fondo_wordpress_cla;
+$text_info: #999999;
+$bg_info: #fafafa;
+
+///////////////////////   SOMBRAS    ///////////////////////////
+
+////////////////////////////////////////////////////////////////
+
+
+    ///////////////////////// MAIN
+    #postbox-container-2 {
+        .sub_tab {
+            //sombra
+
+            .acf-fields>.acf-tab-wrap .acf-tab-group {
+                // sub menú
+                //sombra
+            }
+        }
+
+        // Pestañas principales
+        .acf-postbox.seamless>.acf-fields>.acf-tab-wrap .acf-tab-group li {
+            &.active a {
+                //sombra
+            }
+
+            & a:hover {
+                //sombra
+            }
+        }
+
+    }
+
+
+    ///////////////////////// SIDEBAR
+    #postbox-container-1 {
+        .acf-field {
+            //sombra
+        }
+    }
+
+    /////////////  ALL
+// .notice{
+//     //sombra
+// }
+
+
+
+
+/////////////////////////////////////////////////////////

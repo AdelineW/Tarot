@@ -1,0 +1,39 @@
+[dir="rtl"] #tkna_preloader {
+    .tabs_result {
+      text-align: right;
+    }
+  
+    #results {
+      input:checked ~ .tab-content_result .card {
+        float: right;
+        margin: 0 0 10px 20px;
+      }
+      .tab_result > a::after {
+        left: 23px;
+      }
+      .tab_result > a {
+        width: 102%;
+      }
+      input:checked {
+        + a {
+          &::after {
+            -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+          }
+        }
+      }
+    }
+
+
+    .d2{
+        #Capa_1{
+            margin-left: 5px;
+        }
+        #numCSTotal{
+            margin-left: 2px;
+        }
+    }
+
+  }
+  

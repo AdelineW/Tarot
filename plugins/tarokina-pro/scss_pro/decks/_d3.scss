@@ -1,0 +1,71 @@
+.card_click{
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  height:auto;
+  width: inherit;
+}
+
+
+  .rotate {
+    pointer-events: none;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+
+
+  
+  .cardImg {
+    text-align: center;
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: -webkit-transform 0.8s;
+    -o-transition: transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+
+
+  .flash {
+    visibility: visible;
+    color: #fff;
+    opacity: 1;
+    -webkit-animation-name: flashs;
+            animation-name: flashs;
+    -webkit-animation-duration: 0.4s;
+            animation-duration: 0.4s;
+    -webkit-animation-iteration-count: 3;
+            animation-iteration-count: 3;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+
+  @-webkit-keyframes flashs {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.1;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes flashs {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.1;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }

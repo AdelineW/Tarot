@@ -1,0 +1,539 @@
+body .spread .tablero .molde .sizeImg {
+  visibility: hidden !important;
+}
+
+// EDD Restriction Content for Tarokina uyttuy
+.logged-in #cont_result .candC .c1 {
+  display: none;
+}
+
+
+.mess_only_admin {
+  font-weight: 500;
+  line-height: 1.4;
+  color: #f1ae2a;
+  background: rgba(241, 174, 42, 0.102);
+  padding: 25px;
+  margin: 35px 0 0;
+  border: 2px solid #f1ae2a;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+#cont_result,
+.restric_before {
+  display: none;
+  margin: 30px 0 80px;
+  position: relative;
+  .edd_cr_message {
+    margin: 15px 0 25px 0;
+    text-align: center;
+    p {
+      border: 4px dashed;
+      padding: 25px;
+      margin: 0;
+      a {
+        margin-left: 3px;
+      }
+    }
+  }
+}
+
+// Buton modal login
+.loginRestri-container {
+  margin: 0 auto;
+  padding-top: 0;
+  position: relative;
+  width: 160px;
+  .loginRestri-btn {
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    width: 160px;
+    height: 45px;
+    line-height: 45px;
+    background: #383838;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-box-shadow: 0 5px 5px -5px #333;
+    box-shadow: 0 5px 5px -5px #333;
+    -webkit-transition: background 0.3s ease-in;
+    -o-transition: background 0.3s ease-in;
+    transition: background 0.3s ease-in;
+    &:hover {
+      background: #454545;
+    }
+  }
+
+  .loginRestri-content {
+    h2,
+    p,
+    label,
+    a,
+    .woocommerce-form-login {
+      color: #333 !important;
+    }
+
+    
+    input[type="text"],
+    input[type="password"] {
+      background-color: #f2f2f2 !important;
+      min-height: 45px;
+    }
+  }
+
+  .loginRestri-content,
+  .loginRestri-backdrop {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: opacity 0.2s ease-in;
+    -o-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+  }
+  .loginRestri-close {
+    color: #aaa;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding-top: 3px;
+    background: #fff;
+    font-size: 16px;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      color: #333;
+    }
+  }
+  .loginRestri-content-btn {
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    bottom: 20px;
+    right: 30px;
+    background: #446cb3;
+    color: #fff;
+    width: 50px;
+    border-radius: 2px;
+    font-size: 14px;
+    height: 32px;
+    padding-top: 9px;
+    font-weight: normal;
+    &:hover {
+      color: #fff;
+      background: #365690;
+    }
+  }
+  #loginRestri-toggle {
+    display: none;
+    &.active ~ .loginRestri-backdrop,
+    &:checked ~ .loginRestri-backdrop {
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 9;
+      visibility: visible;
+      opacity: 1;
+      -webkit-transition: opacity 0.2s ease-in;
+      -o-transition: opacity 0.2s ease-in;
+      transition: opacity 0.2s ease-in;
+    }
+    &.active ~ .loginRestri-content,
+    &:checked ~ .loginRestri-content {
+      opacity: 1;
+      background-color: #fff;
+      max-width: 440px;
+      width: 100%;
+      height: auto;
+      padding: 10px 30px;
+      position: fixed;
+      left: calc(50% - 200px);
+      top: 12%;
+      border-radius: 4px;
+      z-index: 999;
+      pointer-events: auto;
+      cursor: auto;
+      visibility: visible;
+      -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+      @media (max-width: 400px) {
+        left: 0;
+      }
+    }
+  }
+}
+// formulario login modal
+.woo_my_account {
+  .edd-login-username,
+  .edd-login-password {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  #edd_user_pass,
+  #edd_user_login {
+    width: 100%;
+  }
+}
+
+.cand {
+  text-align: center;
+  border-bottom: 2px solid;
+  margin-bottom: 10px;
+}
+
+//////////////////////////
+
+.bloqTimeR {
+  max-width: 200px;
+  margin: 40px auto 0;
+  text-align: center;
+  .iconTimerR {
+  }
+}
+
+.timeR {
+  .time__slot {
+  }
+}
+
+.iconTimerR {
+  span {
+  }
+}
+
+.usu_card {
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.usu_header {
+  padding: 3rem 0 1rem;
+}
+
+.usu_content {
+  margin-top: 0.75rem;
+  a {
+    margin-right: 8px !important;
+    text-transform: capitalize !important;
+  }
+  .name_restri_cab {
+    display: inline-block;
+    width: 44%;
+  }
+  .woocommerce-message {
+    margin-bottom: 0 !important;
+    padding: 1em 2em 1em 3.5em !important;
+  }
+  @media (max-width: 768px) {
+    .woocommerce-message {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      .name_restri_cab {
+        text-align: center;
+        margin-bottom: 12px;
+        width: 100%;
+      }
+      a {
+        margin-bottom: 15px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.box-taro-login {
+  margin: 65px auto;
+  padding: 3rem 3rem 0 3rem;
+  margin-bottom: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 2px solid rgba(248, 248, 248, 0.63);
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  .icon {
+    $size: 90px;
+    border-radius: 50%;
+    width: $size;
+    height: $size;
+    background-position: center;
+    // -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),
+    //   0 7px 10px -5px rgba(64, 64, 64, 0.4) !important;
+    // box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),
+    //   0 7px 10px -5px rgba(64, 64, 64, 0.4) !important;
+    position: relative;
+    bottom: 8px;
+    img {
+      border: 2px solid #f1f1f1;
+      border-radius: 50%;
+      width: $size;
+      height: $size;
+      @media (max-width: 768px) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    @media (max-width: 768px) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 8px;
+    }
+  }
+  .text-end {
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    .nameU {
+      margin: 0 0 10px !important;
+    }
+    .taro_btns {
+      a {
+        text-decoration: none !important;
+      }
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
+    @media (max-width: 768px) {
+      text-align: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+  }
+
+  .timeBloq {
+    opacity: 0.7;
+    position: relative;
+    right: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    .relo {
+      margin-left: 10px;
+    }
+  }
+
+  .w3-progress-container {
+    position: relative;
+    top: 3px;
+    margin-bottom: 3rem;
+  }
+
+  &.dis_user {
+    $size: 60px;
+    max-width: 350px;
+    padding: 20px;
+    position: relative;
+    .icon {
+      width: $size;
+      height: $size;
+      img {
+        width: $size;
+        height: $size;
+      }
+    }
+    .iconTime {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+    .timeBloq {
+      margin-top: 4px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+    .taro_btns {
+      text-align: center;
+      position: relative;
+      bottom: 4px;
+    }
+    .w3-progress-container {
+      margin-bottom: 6px;
+    }
+    .nameU {
+      margin: 0 !important;
+      position: relative;
+      top: 10px;
+      text-align: center;
+    }
+  }
+}
+
+//////////////////////////
+
+.w3-progress-container {
+  width: 100%;
+  height: 0.2em;
+  position: relative;
+  bottom: -1px;
+  background-color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.w3-green {
+  // #38ae48
+  background-color: #777 !important;
+}
+.w3-progressbar {
+  height: 100%;
+  position: absolute;
+  line-height: inherit;
+}
+
+.flip-clock {
+  text-align: center;
+  -webkit-perspective: 600px;
+  perspective: 600px;
+  margin: 0 auto;
+}
+.flip-clock *,
+.flip-clock *:before,
+.flip-clock *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.flip-clock__piece {
+  display: inline-block;
+  margin: 0 0.2vw;
+}
+
+.flip-card {
+  display: block;
+  position: relative;
+  padding-bottom: 0.72em;
+  font-size: 1.2rem;
+  line-height: 0.95;
+  font-family: sans-serif !important;
+}
+
+// @media (max-width: 768px) {
+//   .flip-card {
+//     font-size: 1.5rem;
+//   }
+//   .flip-clock__slot {
+//     font-size: 0.7rem;
+//   }
+// }
+
+/*////////////////////////////////////////*/
+.flip-card__top,
+.flip-card__bottom,
+.flip-card__back-bottom,
+.flip-card__back::before,
+.flip-card__back::after {
+  display: block;
+  height: 0.72em;
+  color: #ccc;
+  background: #222;
+  padding: 0.23em 0.25em 0.4em;
+  border-radius: 0.15em 0.15em 0 0;
+  backface-visiblity: hidden;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  width: 2em;
+}
+.flip-card__bottom,
+.flip-card__back-bottom {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-top: solid 1px #000;
+  background: #393939;
+  border-radius: 0 0 0.15em 0.15em;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 2;
+}
+.flip-card__back-bottom {
+  z-index: 1;
+}
+.flip-card__bottom::after,
+.flip-card__back-bottom::after {
+  display: block;
+  margin-top: -0.72em;
+}
+.flip-card__back::before,
+.flip-card__bottom::after,
+.flip-card__back-bottom::after {
+  content: attr(data-value);
+}
+.flip-card__back {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0%;
+  pointer-events: none;
+}
+.flip-card__back::before {
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.woo_my_account {
+  margin-bottom: 50px;
+}

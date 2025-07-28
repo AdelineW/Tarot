@@ -1,0 +1,95 @@
+////////////////////////   TAROKINA-PRO 3 CARDS  ///////////////////////////////
+@import "restriction";
+
+p#numCard {
+  margin: 45px 0 1.5em;
+}
+
+._2cards {
+  position: relative;
+
+  @import "tarot_partes/img";
+  .row{margin: 0 !important;}
+  
+  //Spread
+  .spread {
+    .tablero {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: ". .";
+
+      justify-items: center;
+
+      // Modificar el tamaño de las cartas
+      margin: 75px 0 20px;
+      max-width: 420px;
+
+      @media (max-width: 768px) {
+        margin: 50px 0 -13px;
+        width: 90%;
+      }
+
+      $space: 9%;
+
+      .m1 {
+        margin: 0 $space 0 0;
+        grid-area: #{"1 / 1"};
+        position: relative;
+      }
+      .m2 {
+        margin: 0 $space 0 0;
+        grid-area: #{"1 / 2"};
+        position: relative;
+      }
+    }
+  }
+
+  @import "tarot_partes/spreads_all";
+  @import "tarot_partes/loader";
+  @import "resultado";
+}
+
+@import 'rtl';
+
+// /* Size - Text Legend */
+// .page-id-1013 #tkna_preloader #text_spread  h3.meaningsTitles,
+// .postid-1 #results h3.meaningsTitles {
+//   font-size: 17px !important;
+//  }
+
+//  /* Size - Text Cards References */
+// .page-id-1013 #tkna_preloader #text_spread,
+// .page-id-1013 .tabs .tab a {
+//   font-size: 17px !important;
+//  }
+
+//  /* Size - Title Cards Result */
+//  .page-id-1013 .tabs .tab .tab-content > p {
+//   font-size: 17px !important;
+//  }
+
+
+// /* Size - Text Button Read */
+// .page-id-1013 #btnResult .button{
+//   font-size: 20px !important;
+//  }
+
+// /* Delete icon in Button Read*/
+//  .page-id-1013 #btnResult .button svg{
+//   display: none !important;
+//  }
+
+
+
+// /* Change font-family */
+// .postid-1 #tkna_preloader #text_spread  h3.meaningsTitles,
+// .postid-1 #results h3.meaningsTitles,
+// .postid-1 #tkna_preloader #text_spread,
+// .postid-1 .tabs .tab a,
+// .postid-1 .tabs .tab .tab-content > p,
+// .postid-1 #btnResult .button
+//  {
+//   font-family: Helvetica, Arial, sans-serif !important;
+//  }
+

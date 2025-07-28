@@ -1,0 +1,387 @@
+//////////////////////    VARIABLES    ////////////////////////////
+
+#screen-meta-links {
+  position: absolute;
+  right: 0;
+  top: -23px;
+}
+
+// Cabecera
+.cabecera_head {
+  background: $primary-color;
+  -webkit-box-shadow: 0px 0px 60px #ccc;
+  box-shadow: 0px 0px 60px #ccc;
+  padding: 14px 20px;
+  margin: 20px 22px 36px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  @media (max-width: 600px) {
+    position: relative;
+    top: 55px;
+  }
+
+  .cabecera_logo {
+    margin-bottom: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    // .textPro{
+    //   color: #3c2a3e;
+    // }
+    img {
+      width: 145px;
+      height: 100%;
+      vertical-align: middle;
+    }
+    .name {
+      position: relative;
+      top: 36px;
+      right: 60px;
+      font-size: 16px;
+      color: #b17cb6;
+    }
+  }
+  .bloq_title {
+    position: relative;
+    right: 30px;
+    .logoTitle {
+      color: #ffffff;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      position: relative;
+      top: 5px;
+      padding: 0px 5px 10px 15px;
+      text-shadow: 1px 1px 1px #b9b9b9;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+    }
+    .plugV {
+      position: relative;
+      top: 5px;
+      color: #ffffff;
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+
+  .cabecera_info {
+    font-size: 14px;
+    @media (max-width: 880px) {
+      margin-top: 15px;
+      width: 100%;
+    }
+    span {
+      padding: 0px 10px;
+      border-right: 1px solid #ffffff;
+      &:last-child {
+        border: none;
+      }
+    }
+    a {
+      overflow: hidden;
+      outline: none;
+      font-weight: 600;
+      opacity: 0.8;
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+}
+
+// Tamaño no-image
+$width-noImage: 78px;
+$height-noImage: 135px;
+$pad_ext: 37px;
+
+.post-type-tarokkina_pro {
+  ///////////////////////////////////////////////////////////////////
+
+  & .carbon-theme-options > h2,
+  h1.wp-heading-inline {
+    display: none !important;
+  }
+
+  .wrap .page-title-action {
+    margin: 5px 0;
+    display: inline-block;
+  }
+
+  @media only all and (max-width: 850px) {
+    .carbon-network #post-body.columns-2 #postbox-container-1.fixed,
+    .carbon-theme-options #post-body.columns-2 #postbox-container-1.fixed {
+      position: inherit;
+    }
+  }
+
+  $fondo: #9ba2a6;
+  $color1: #fff;
+  #menu-posts-tarokkina_pro > ul > {
+    li {
+      position: relative;
+      margin-left: 15px;
+      padding-left: 5px;
+      &::before {
+        content: "_";
+        position: absolute;
+        font-family: dashicons;
+        top: -1px;
+        left: -8px;
+        font-size: small;
+        padding: 1px;
+        color: #2c3338;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 15px;
+        width: 15px;
+        height: 15px;
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  #menu-posts-tarokkina_pro > ul > li:nth-child(2) {
+    &::before {
+      color: $fondo;
+    }
+  }
+
+  #menu-posts-tarokkina_pro > ul > li:nth-child(3) {
+    &::before {
+      color: $fondo;
+    }
+  }
+
+  #menu-posts-tarokkina_pro > ul > li:nth-child(4) {
+    &::before {
+      color: $fondo;
+    }
+  }
+
+  #menu-posts-tarokkina_pro > ul > li:nth-child(5) {
+    &::before {
+      color: $fondo;
+    }
+  }
+
+  #menu-posts-tarokkina_pro > ul > li:nth-child(6) {
+    &::before {
+      color: $fondo;
+    }
+  }
+
+  #menu-posts-tarokkina_pro > ul > li:nth-child(7) {
+    &::before {
+      color: $fondo;
+    }
+  }
+
+  #menu-posts-tarokkina_pro > ul > li:nth-child(5).current {
+    display: inline-block; /* For IE11/ MS Edge bug */
+    pointer-events: none;
+    text-decoration: none;
+    &::before {
+      color: #fff;
+    }
+  }
+
+  .row-actions span.trash a.submitdelete {
+    color: $arnelio_color;
+  }
+
+  ////////////////////////
+}
+
+#nn1.notice p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+// Plugins.php
+
+.info_no_tarokina {
+  background-color: red;
+  color: #fff;
+  padding: 4px 6px;
+}
+
+// Menú tarots 100
+.containermenuT {
+  //margin: 12px 0;
+  text-align: center;
+  a.button {
+    margin: 5px 2px;
+    &.active,
+    &:hover {
+      position: relative;
+    }
+  }
+}
+
+.flechaCard{
+    position: relative;
+    top: 20px;
+    font-size: 24px;
+}
+
+.cabecera_info span .btnCardIds {
+  background-color: #c51761;
+  color: #fff !important;
+  padding: 10px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  &:hover {
+    background-color: $color_cartas;
+    text-decoration: none;
+    opacity: 1;
+  }
+}
+
+.clear_tooltip {
+  position: relative;
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 78px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    margin-right: 15px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    display: none;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 60px;
+    margin-right: -5px;
+    top: 46px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    border: 10px solid $color_cartas;
+    border-color: $color_cartas transparent transparent transparent;
+    z-index: 1;
+    display: none;
+  }
+  &:hover::before,
+  &:hover::after {
+    display: block;
+  }
+}
+
+.option_tooltip {
+  position: relative;
+  &:focus{
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 100px;
+    top: -28px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: -17px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    display: none;
+  }
+  &:hover::before,
+  &:hover::after {
+    display: block;
+  }
+}
+
+/////////////////////////////////// OPCIONES //////////////////////////////////
+.post-type-tarokkina_pro {
+  .system_status {
+    margin-bottom: 20px;
+  }
+}
+
+///////////////////////       ///////////////////////////
+// Forzar dirección a la derecha
+////////////////////////////////////////////////////////////////
+
+.cabecera_head {
+  direction: ltr;
+}
+
+[dir="rtl"] {
+  .cabecera_head {
+    margin: 20px 0 36px 22px !important;
+  }
+
+  #tarokkina_pro-catchecklist {
+    direction: ltr;
+  }
+
+  .post-php.post-type-tarokkina_pro .bloqTableLegend .text1 img {
+    margin-right: -15px !important;
+  }
+
+  .post-php.post-type-tarokkina_pro .bloqTableLegend .table-content {
+    border-right: 4px solid $primary-color;
+    border-left: none;
+  }
+
+  .post-php.post-type-tarokkina_pro .bloqTableLegend .table::before {
+    border-left: 8px solid $primary-color;
+    border-right: none;
+  }
+
+  .referen {
+    margin-right: 10px;
+  }
+
+  .post-php.post-type-tarokkina_pro .BigNum {
+    margin-left: 20px;
+    margin-right: -12px;
+  }
+}

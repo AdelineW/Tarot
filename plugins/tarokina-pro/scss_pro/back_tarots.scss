@@ -1,0 +1,2295 @@
+// Insertar flechas. Nonbre classes: fiFon1, refc1
+//
+//@import "back_funciones";
+@import "back_colors";
+@import "back_base";
+@import "back_bloqueo.scss";
+@import "grid.scss";
+@import "toggle_check.scss";
+
+@media (max-width: 1024px) {
+  #poststuff #post-body.columns-2 {
+    margin-right: 0;
+  }
+  #wpbody-content #post-body.columns-2 #postbox-container-1 {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+#post-body-content {
+  margin-top: 51px;
+}
+#text_holder {
+  display: none;
+  color: #fff;
+}
+
+.tar_bloq {
+  &:hover {
+    -webkit-box-shadow: 0px 15px 30px -17px rgba(#000, 0.75);
+    box-shadow: 0px 15px 30px -17px rgba(#000, 0.75);
+  }
+}
+
+.infoSvg {
+  display: none !important;
+  position: absolute;
+  left: 29px;
+  //border-bottom: 1px solid;
+  img {
+    width: 17px;
+    height: auto;
+    &:hover {
+      background: #ffffff;
+      border-radius: 50%;
+    }
+  }
+}
+
+.infoEcome {
+  display: none !important;
+  position: absolute;
+  left: -55px;
+  img {
+    width: 17px;
+    height: auto;
+    &:hover {
+      background: #ffffff;
+      border-radius: 50%;
+    }
+  }
+}
+
+.infoOpti {
+  display: none !important;
+  position: absolute;
+  left: 11px;
+  img {
+    width: 17px;
+    height: auto;
+    &:hover {
+      background: #ffffff;
+      border-radius: 50%;
+    }
+  }
+}
+
+.banner {
+  cursor: pointer;
+}
+
+$color_Fondo_fields: #fff9f1;
+
+.lisoDefault.lisoDefault_ab.refCard {
+  padding: 0px 25px 19px !important;
+  border-radius: 0;
+  border-left: none !important;
+  background-color: $color_Fondo_fields !important;
+  &.refc1 {
+    padding-top: 30px !important;
+    margin-top: 30px !important;
+  }
+}
+
+.lisoEstilos.fieldFondo {
+  //padding: 24px 44px 27px !important;
+  //border-bottom: 1px solid rgba(#000, 0.03) !important;
+  //border-left: none !important;
+  background-color: $color_Fondo_fields !important;
+  &.fiFon1 {
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 30px !important;
+    margin-top: 30px !important;
+  }
+}
+
+.textNewTarot {
+  background: #f8f8f8;
+  color: $primary-color;
+  padding: 6px 15px;
+  position: absolute;
+  top: 14px;
+  left: 38px;
+  border-radius: 5px 5px 0 0;
+  border-top: 5px solid;
+}
+
+ul.gradient-list {
+  counter-reset: alphabeticList;
+  list-style: none;
+  margin: 0 0 0 10px;
+  padding: 20px 0;
+  background: #f8f8f8;
+
+  > li {
+    font-size: 14px;
+    color: #98699c;
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    counter-increment: alphabeticList;
+    margin-top: 1rem;
+    margin-left: 20px;
+    position: relative;
+    &::before,
+    &::after {
+      border-radius: 1rem 1rem 0 1rem;
+      content: "";
+      left: -10px;
+      bottom: 4px;
+      overflow: hidden;
+      position: relative;
+    }
+    &::before {
+      content: counter(alphabeticList, upper-alpha);
+      speak: counter(alphabeticList, upper-alpha);
+      color: #fff;
+      padding: 2px 7px 2px 6px;
+      z-index: 1;
+      margin-left: -20px;
+    }
+
+    &:nth-child(1)::before {
+      background: $c_barajas;
+    }
+    &:nth-child(2)::before {
+      background: $c_cartas;
+    }
+    &:nth-child(3) {
+      &::before {
+        background: $c_tarots;
+      }
+    }
+  }
+}
+
+#demoinstall {
+  background: no-repeat;
+  cursor: pointer;
+  border: 1px solid;
+  position: relative;
+  color: #fff;
+  background: #c1a738;
+  border-color: #c1a738;
+  top: 1px;
+  &:hover {
+    color: #333;
+    background: #fff;
+    border-color: #fff;
+  }
+}
+
+#iddemo {
+  position: relative;
+  background-color: $primary-color;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  & > img {
+    max-width: 125px;
+    width: 125px;
+    image-rendering: -webkit-optimize-contrast;
+  }
+  img.spinnerClass {
+    width: 40px;
+    position: absolute;
+    right: 20px;
+  }
+  img {
+    max-width: 300px;
+  }
+  p {
+    text-align: left;
+    color: #fff;
+  }
+  h2 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+
+#instFree {
+  position: relative;
+  background-color: #4da69b;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  & > img {
+    max-width: 125px;
+    width: 125px;
+    image-rendering: -webkit-optimize-contrast;
+  }
+  img.spinnerClass {
+    width: 40px;
+    position: absolute;
+    right: 20px;
+  }
+  img {
+    max-width: 300px;
+  }
+  p {
+    text-align: left;
+    color: #fff;
+  }
+  h2 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+
+.post-type-tarokkina_pro {
+  .cf-container .cf-field.infoTarots {
+    border-radius: 2px;
+    margin: 5px 0 0;
+    .titleFormsBloq {
+      text-align: center;
+      position: relative;
+      top: 18px;
+      margin-bottom: 10px;
+      .titleForms,
+      .dashicons {
+        color: $primary-color;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  }
+  .bloq_demoinstall {
+    text-align: right;
+    font-style: italic;
+    font-size: 12px;
+    color: #7f8b97;
+  }
+
+  .arnelioDeck_1,
+  .freeinstall_1 {
+    display: none;
+  }
+
+  .saveBotton {
+    border-radius: 4px 4px 0 0;
+  }
+
+  // .change_spread {
+  //   position: fixed;
+  //   bottom: 0;
+  //   right: 20.4%;
+  //   z-index: 99990;
+  //   background: #fbfbfb;
+  //   padding: 17px 66px;
+  //   border-radius: 4px 4px 0 0;
+  //   border: 3px double #ccc;
+  //   input {
+  //     border: 4px double #fff;
+  //     padding: 0 10px;
+  //     font-size: 14px;
+  //     min-height: 36px;
+  //     line-height: 0px;
+  //   }
+  // }
+
+  #major-publishing-actions {
+    background-color: #f0f0f1;
+    padding: 3px 0;
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-right: 0;
+
+    #publishing-action {
+      width: 100%;
+      background: #f0f0f1;
+
+      .spinner,
+      .spinner_update {
+        display: none;
+        width: 40px;
+      }
+
+      #publish {
+        $color: $color_wordpress;
+        width: 100%;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        height: 45px;
+        position: relative;
+        bottom: 14px;
+        border: none;
+        @media (max-width: 1024px) {
+          width: 175px;
+          float: left;
+        }
+      }
+    }
+  }
+
+  #infoDelete {
+    padding: 10px;
+    border-radius: 3px;
+    background: #d69c17;
+    color: #fff;
+    text-align: center;
+    display: none;
+  }
+
+  .spinnerClass {
+    background: #fff;
+    border-radius: 50%;
+    margin-left: 8px;
+    width: 40px;
+  }
+
+  .postbox {
+    border: none;
+    color: #222;
+  }
+
+  #submitdiv {
+    h3 {
+      display: none;
+    }
+
+    margin-bottom: 0;
+    //background: none;
+  }
+
+  .theme-options-container {
+    .cf-container__tabs {
+      padding: 3px 0 0 0;
+      border: 0;
+    }
+
+    .cf-container__fields {
+      padding: 15px 2% 37px;
+
+      @media (max-width: 768px) {
+        padding: 5px;
+      }
+    }
+  }
+  &.tarokkina_pro_page_crb_carbon_fields_container_tarots
+    .theme-options-container
+    .cf-container__fields {
+    min-height: 490px;
+  }
+
+  // .spinFields {
+  //   display: -webkit-box;
+  //   display: -ms-flexbox;
+  //   display: flex;
+  //   -webkit-box-pack: center;
+  //   -ms-flex-pack: center;
+  //   justify-content: center;
+  //   -webkit-box-align: center;
+  //   -ms-flex-align: center;
+  //   align-items: center;
+  //   min-height: 490px;
+  // }
+
+  .cf-color__picker {
+    left: 133px;
+  }
+
+  .cf-complex__group-index {
+    background: $c_tarots;
+    color: #fff;
+    width: initial;
+    padding: 0 25px;
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  .del_tarots {
+    bottom: 16px;
+    position: relative;
+  }
+
+  .capaBtn {
+    width: 122px;
+    height: 65px;
+    background: #fff;
+    position: relative;
+  }
+
+  .cf-complex__placeholder {
+    button {
+      background: $c_tarots;
+      color: #fff;
+      border: none;
+      //sombra
+
+      &:hover {
+        background: darken($c_tarots, 4%);
+        color: #fff;
+      }
+    }
+  }
+
+  .bloq_del_tarots .cf-complex__inserter-button,
+  .bloq_del_tarots .cf-complex__toggler,
+  .html_del_tarots .del_tarots {
+    min-width: 120px;
+    text-align: center;
+  }
+  .html_del_tarots {
+    direction: ltr;
+  }
+
+  .bloq_del_tarots {
+    .cf-complex__groups {
+      .cf-complex__group:before {
+        position: absolute;
+        top: 14px;
+        left: 67px;
+        z-index: 1;
+        font-size: 14px;
+        background: $primary-color;
+        border-radius: 50%;
+        color: #fff;
+        width: 17px;
+        text-align: center;
+      }
+    }
+    .cf-complex__placeholder-label {
+      border: 4px dashed #f1f1f1;
+      padding: 25px;
+      color: #bebfcc;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .cf-complex__inserter-button,
+    .cf-complex__toggler {
+      background: $c_tarots;
+      color: #fff;
+      border: none;
+      //sombra
+    }
+
+    .cf-complex__actions {
+      margin-top: 50px;
+      direction: ltr;
+    }
+
+    .dashicons-admin-page:before {
+      content: "";
+      background-color: transparent;
+    }
+  }
+
+  //Boton de borrar tarots
+  .del_tarots,
+  .del_tarots:focus {
+    background: #f1f1f1;
+    color: #333;
+    border-color: #f1f1f1;
+    &:hover {
+      color: #fff !important;
+    }
+  }
+
+  .del_tarots:focus {
+    background: #f1f1f1;
+    color: #333;
+    border-color: #f1f1f1;
+    -webkit-box-shadow: 0 0 0 1px $arnelio_color;
+    box-shadow: 0 0 0 1px $arnelio_color;
+  }
+
+  .del_tarots:hover {
+    background: $arnelio_color;
+    color: #fff;
+    border-color: transparent;
+  }
+
+  .bloq_short .shortcode {
+    margin: 0 29px;
+  }
+
+  .short_strong {
+    background: #fff;
+    border-radius: 5px;
+    padding: 8px;
+  }
+
+  .title_short {
+    font-size: 14px;
+    font-weight: 600;
+    color: #782c7a;
+    margin-bottom: 15px;
+  }
+
+  .cf-radio {
+    .cf-radio__list-item {
+      font-size: 14px;
+      color: $color_text;
+    }
+  }
+
+  .cf-container .cf-field + .cf-field {
+    border-top: none;
+    &.cf-radio-image {
+      img {
+        min-width: 90px;
+        opacity: 0.5;
+      }
+    }
+    &.magin_bottom {
+      margin-bottom: 4px;
+    }
+  }
+
+  .spreadNameActive {
+    padding-top: 0px !important;
+  }
+
+  .max_ {
+    margin-top: -16px;
+    .cf-field__body {
+      max-width: 200px;
+      display: inline-block;
+      select {
+        min-width: 118px;
+      }
+    }
+    .cf-field__help {
+      margin-left: 8px;
+      .dashicons {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .spreadActivePro {
+    padding-top: 0px !important;
+  }
+
+  .cf-complex__group--collapsed .cf-complex__group-head {
+    font-size: 17px;
+    border: none;
+    background: #fff;
+    color: $fondo_wordpress_cla;
+    border: 3px double #ccc;
+    pointer-events: none !important;
+    cursor: default !important;
+  }
+
+  .cf-complex__group-head {
+    font-size: 32px;
+    background: $primary-color;
+    border: 3px double $primary-color;
+    color: $color_tarot;
+    pointer-events: none !important;
+    cursor: default !important;
+    .cf-complex__group-index {
+      border-right: none;
+    }
+  }
+
+  .cf-container__tabs {
+    background-color: #f0f0f1;
+  }
+
+  .cf-container__tabs-item--current {
+    border-top: 6px solid $c_tarots;
+    background: #fff !important;
+    color: #23282d !important;
+  }
+
+  .cf-complex__group-actions--grid {
+    right: 24px;
+  }
+
+  .cf-container__tabs-item {
+    border-radius: 5px 5px 0 0;
+    font-size: 17px;
+    padding: 8px 40px;
+    color: rgba(#23282d, 0.5);
+    font-weight: 600;
+    border-left: none;
+    border-bottom: none;
+    button {
+      cursor: pointer;
+    }
+  }
+
+  .cf-complex__group-action {
+    //color: #fff;
+
+    .dashicons-trash,
+    .dashicons-admin-page {
+      display: none;
+    }
+  }
+
+  .btnTarot {
+    text-align: center;
+    .btnInTarot {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 2.15384615;
+      padding: 0 10px;
+      height: 28px;
+      margin-left: 8px;
+      cursor: default;
+      border: 1px solid $fondo_wordpress_osc;
+      background: #f5f5f5;
+      -webkit-appearance: none;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+
+    .pro {
+      &::before {
+        vertical-align: text-top;
+      }
+    }
+  }
+
+  .titular {
+    font-size: 35px;
+    color: #a0a0a0;
+    opacity: 0.6;
+  }
+
+  .spreadsSelect {
+    text-align: left;
+    position: relative;
+    left: 27px;
+    top: 22px;
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .blockTab {
+    position: relative;
+    .cf-field__help {
+      position: absolute;
+      left: 185px;
+      .no-btn {
+        border: none;
+        font-size: 12px;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+          background: $color_wordpress;
+        }
+      }
+    }
+  }
+
+  .addon.btnTarot.blockTab_Inact {
+    color: rgba(#000, 0.2);
+    pointer-events: none;
+    cursor: default;
+    border-color: #dcdcdc;
+    opacity: 0.2;
+
+    &::before {
+      content: "\f160";
+      font-family: dashicons;
+      font-size: 44px;
+      position: relative;
+      top: 27px;
+    }
+  }
+
+  .cf-complex__group-body {
+    //font-size: 14px;
+    background: #fff;
+    padding-bottom: 75px;
+    margin-bottom: 75px;
+    //sombra
+    -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+      0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+      0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    border: 22px solid #7d4182;
+    .linc_inactive {
+      display: none;
+    }
+    .plug_inactive {
+      display: none;
+    }
+    .bloq_aviso_inactive {
+      display: none;
+    }
+
+    &.inv {
+      .bloq_aviso_inactive {
+        display: block;
+        .aviso_inactive {
+          padding: 10px;
+          background: #fff;
+          color: #3c434a;
+          border: 1px solid #c3c4c7;
+          border-left-width: 4px;
+          -webkit-box-shadow: 0 1px 1px rgba(#000, 0.4);
+          box-shadow: 0 1px 1px rgba(#000, 0.4);
+          border-left-color: $arnelio_color;
+        }
+      }
+
+      .linc_inactive {
+        max-width: 300px;
+        opacity: 0.3;
+        &::before {
+          content: "\f160";
+          font-family: dashicons;
+          font-size: 44px;
+          position: relative;
+          top: 10px;
+        }
+      }
+
+      .imgSpread {
+        label.cf-radio__label:hover {
+          background: rgba($c_tarots, 0.05);
+        }
+        .cf-radio__list-item {
+          &::before {
+            content: "\f160";
+            font-family: dashicons;
+            z-index: 9;
+            background: #fafafa;
+            color: $form_titles;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 63%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-size: 26px;
+          }
+        }
+      }
+
+      &.PlgDis {
+        .linc_inactive {
+          display: none !important;
+        }
+        .plug_inactive {
+          display: block !important;
+        }
+      }
+      &.PlgEna {
+        .linc_inactive {
+          display: block !important;
+        }
+        .plug_inactive {
+          display: none !important;
+        }
+      }
+    }
+
+    &.val {
+      &.PlgDis {
+        .linc_inactive {
+          display: none !important;
+        }
+        .plug_inactive {
+          display: block !important;
+        }
+      }
+      &.PlgEna {
+        .linc_inactive {
+          display: none !important;
+        }
+        .plug_inactive {
+          display: none !important;
+        }
+      }
+    }
+
+    &.PlgDis {
+      .plug_inactive {
+        //opacity: 0.3;
+        max-width: 300px;
+        &::before {
+          content: "\f106";
+          font-family: dashicons;
+          font-size: 44px;
+          position: relative;
+          top: 10px;
+        }
+      }
+    }
+
+    &.val,
+    &.PlgDis {
+      .bloq_aviso_inactive {
+        display: none !important;
+      }
+    }
+  }
+
+  .cf-container .cf-field__label {
+    color: $form_titles;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .cf-field__help {
+    color: $text_info;
+    // background: $bg_info;
+    font-size: 14px;
+  }
+
+  .helpIcon {
+    position: relative;
+    right: 20px;
+    top: 7px;
+    text-decoration: none;
+  }
+
+  .tkta_info {
+    z-index: 9;
+    .cf-field__body {
+      font-size: 14px;
+      background-color: #fff7eb !important;
+      color: #b9a385 !important;
+      padding: 15px;
+      margin-top: -30px;
+      border-radius: 4px;
+      position: relative;
+      top: 15px;
+    }
+    .cf-field__help {
+      font-size: 14px;
+      background-color: #fff7eb !important;
+      color: #b9a385 !important;
+      padding: 15px;
+      display: block;
+    }
+  }
+
+  .iconPlug {
+    text-decoration: none;
+    font-size: 16px;
+    vertical-align: sub;
+  }
+
+  // Avisos por licencia o plugin desactivado
+
+  .linc_inactive,
+  .plug_inactive {
+    padding: 0px 10px 22px;
+    margin: 20px auto;
+    color: $arnelio_color;
+    font-size: 18px;
+    border: 1px solid;
+  }
+
+  .cf-container .cf-field {
+    border: none;
+    @media (max-width: 425px) {
+      margin: 0 15px;
+    }
+  }
+
+  .dashicons-trash {
+    &::before {
+      color: #fff;
+      background: red;
+      border-radius: 50%;
+      padding: 4px;
+    }
+  }
+
+  .dashicons-arrow-down {
+    background: #f1f1f1;
+    width: 40px;
+    //sombra
+    -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+
+    &:before {
+      color: #333333;
+    }
+
+    &:hover {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+
+  .dashicons-arrow-up {
+    background: #f1f1f1;
+    width: 40px;
+    //sombra
+
+    &:before {
+      color: #333333;
+    }
+
+    &:hover {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+
+  .cf-field__body {
+    input[type="color"],
+    input[type="date"],
+    input[type="datetime-local"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="month"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="time"],
+    input[type="url"],
+    input[type="week"],
+    select,
+    textarea {
+      border-color: #d5d5d5;
+      //background: #fafafa;
+      color: $color_campos;
+      font-weight: normal;
+      font-size: 16px;
+    }
+
+    input[type="radio"]:checked::before {
+      background-color: $c_tarots;
+    }
+  }
+
+  $color_place: #bdbdbd; //$arnelio_color
+
+  ::-webkit-input-placeholder {
+    /* Edge */
+    color: $color_place;
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $color_place;
+  }
+
+  ::-moz-placeholder {
+    color: $color_place;
+  }
+
+  ::-ms-input-placeholder {
+    color: $color_place;
+  }
+
+  ::placeholder {
+    color: $color_place;
+  }
+
+  .nombre input {
+    &::-webkit-input-placeholder {
+      /* Edge */
+      color: $arnelio_color;
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: $arnelio_color;
+    }
+
+    &::-moz-placeholder {
+      color: $arnelio_color;
+    }
+
+    &::-ms-input-placeholder {
+      color: $arnelio_color;
+    }
+
+    &::placeholder {
+      color: $arnelio_color;
+    }
+  }
+
+  .inside .cf-radio__input:checked ~ .cf-radio__label .cf-radio-image__image,
+  .inside .cf-radio__input:focus ~ .cf-radio__label .cf-radio-image__image {
+    outline: 4px solid $color_tarot;
+    opacity: 1;
+  }
+
+  .cf-association {
+    .cf-association__option-type,
+    .cf-association__option-action--edit {
+      display: none;
+    }
+  }
+
+  .postbox .cf-media-gallery__inner {
+    border: none;
+  }
+
+  .backface {
+    margin-bottom: -14px;
+    .cf-media-gallery__actions {
+      border: none !important;
+    }
+  }
+
+  .type_select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 15px 15px 24px;
+
+    .cf-field__head {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin-bottom: 2px;
+      label {
+        font-size: 14px;
+        display: inline;
+        color: $Titles_portada;
+      }
+    }
+    .cf-field__body {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      &::before {
+        content: "\f123";
+        font-family: dashicons;
+        font-size: 25px;
+        color: $primary-color;
+        vertical-align: middle;
+      }
+      select {
+        max-width: inherit;
+        width: inherit;
+        font-size: 14px;
+        line-height: 2.15384615;
+        margin-left: 8px;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        border-radius: 3px;
+        white-space: nowrap;
+        background: #ffffff
+          url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E)
+          no-repeat right 5px top 55%;
+        background-size: 16px 16px;
+        cursor: pointer;
+        vertical-align: middle;
+        min-width: 130px;
+      }
+    }
+  }
+
+  .portada {
+    img {
+      width: 100%;
+      max-width: 230px;
+      border-radius: 5px;
+    }
+  }
+}
+
+$radius: 15px;
+// custom
+.lisoDefault {
+  $padding: 37px;
+  margin: 0 29px;
+  padding: 0 30px 20px !important;
+  border-left: 3px solid #e7e7e7 !important;
+  $color1: #fafafa;
+  $color2: #fafafa;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+
+  &.lisoDefault_a {
+    border-radius: $radius $radius 0 0;
+    padding-top: $padding !important;
+  }
+
+  &.lisoDefault_b {
+    border-radius: 0 0 $radius $radius;
+    padding-bottom: $padding !important;
+  }
+  &.lisoDefault_ab {
+    border-radius: $radius;
+    padding-top: $padding !important;
+    padding-bottom: $padding !important;
+  }
+
+  &.colorA {
+    background-color: $color1;
+  }
+  &.colorB {
+    background-color: $color2;
+  }
+}
+
+.tabs_color.lisoEstilos.resultColor {
+  padding-top: 0 !important;
+}
+
+.lisoEstilos {
+  margin: 0 29px;
+  padding: 0 30px 20px !important;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  border-left: 3px solid #e7e7e7 !important;
+  $color1: #fafafa;
+  $color2: #fafafa;
+  $padding: 37px;
+
+  .cf-color__reset {
+    .dashicons {
+      &::before {
+        background: #d1d1d1;
+        border-radius: 50%;
+        color: #fff;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+      }
+      &:hover::before {
+        background: $arnelio_color;
+      }
+    }
+  }
+
+  &.colorA {
+    background-color: $color1;
+  }
+  &.colorB {
+    background-color: $color2;
+  }
+  &.tabs_color {
+    margin-top: -24px;
+  }
+
+  & button {
+    color: $color_estilos !important;
+    border-color: $color_estilos !important;
+  }
+
+  // & .color__inner .cf-field__body .cf-color__preview {
+  //   background-color: #000000;
+  // }
+
+  & .cf-field__head .cf-field__label {
+    color: $form_titles !important;
+  }
+
+  &.lisoEstilos_a {
+    border-radius: $radius $radius 0 0;
+    padding-top: $padding !important;
+  }
+
+  &.lisoEstilos_b {
+    border-radius: 0 0 $radius $radius;
+    padding-bottom: $padding !important;
+  }
+
+  &.lisoEstilos_ab {
+    border-radius: $radius;
+    padding-top: $padding !important;
+    padding-bottom: $padding !important;
+  }
+}
+
+.title_inside_estilos,
+.title_inside {
+  .cf-field__body {
+    // background: #f0f0f1;
+    // border-radius: 35px;
+    // -webkit-box-shadow: 1px 1px 0px #33333336;
+    // box-shadow: 1px 1px 0px #33333336;
+    .title_inside {
+      color: #545656;
+    }
+  }
+}
+
+.btnTarot .title_inside {
+  color: $Titles_portada;
+}
+.title_inside {
+  margin: 30px 0 0;
+  text-align: center;
+  font-size: 19px;
+  color: $Titles_portada;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  img {
+    vertical-align: bottom;
+    width: 54px;
+  }
+
+  .dashicons {
+    font-size: 30px;
+    margin-right: 10px;
+    vertical-align: sub;
+    position: relative;
+    top: 3px;
+  }
+}
+
+// shrtcodes
+.titleShort {
+  color: $form_titles;
+  //font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  @media (max-width: 425px) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+input.short {
+  padding: 8px;
+  border-radius: 3px;
+  width: 100%;
+  border: none;
+  color: $color_tarot;
+  background: #fff;
+  font-weight: normal;
+  font-size: 16px;
+
+  &::-moz-selection {
+    background: $color-verde;
+    color: #fff;
+  }
+
+  &::selection {
+    background: $color-verde;
+    color: #fff;
+  }
+}
+
+div.titleShort > span.button.copyP {
+  margin-left: 15px;
+  color: #797979;
+  border-color: #c7c7c7;
+  background: #fff;
+}
+
+.copyM {
+  display: none;
+  color: $color-verde;
+  padding: 3px;
+  border-radius: 3px;
+  line-height: 1.8;
+}
+
+// lista de tarots instalados
+
+.list_radio {
+  .cf-radio__list {
+    .cf-radio__list-item:first-child {
+      display: none;
+    }
+  }
+}
+
+.tarokki_barajas,
+.tarokki_mode {
+  input:checked + label {
+    color: $color_campos;
+    font-weight: bold;
+    //font-size: 16px;
+  }
+}
+
+.borderDashed_a {
+  border: 2px dashed #4b254e !important;
+  border-bottom: none !important;
+  border-radius: 18px;
+  margin-top: 21px;
+}
+
+.borderDashed_medio {
+  border: 2px dashed #4b254e !important;
+  border-top: none !important;
+  margin-top: 0;
+  border-bottom: none !important;
+  margin-bottom: 0;
+}
+
+.borderDashed_b {
+  border: 2px dashed #4b254e !important;
+  border-top: none !important;
+  border-radius: 18px;
+  margin-top: 0;
+}
+
+// Developer
+.cf-field.cf-checkbox.tabs_color.developer {
+  .cf-field__body input:checked {
+    background: #fd4f4f;
+  }
+}
+
+// .tarokki_selector {
+//   li:last-child {
+//     &::after {
+//       content: "New";
+//       display: inline-block;
+//       font-size: 12px;
+//       padding: 0 10px;
+//       margin-left: 10px;
+//       line-height: 1.8em;
+//       visibility: visible;
+//       border-radius: 3px;
+//       background-image: -o-linear-gradient(left, #ff6d6f, #742c7a);
+//       background-image: -webkit-gradient(linear, left top, right top, from(#ff6d6f), to(#742c7a));
+//       background-image: linear-gradient(90deg, #ff6d6f, #742c7a);
+//       border-color: #000;
+//       color: #fff;
+//     }
+//   }
+// }
+
+.cf-field__body .tarokki_barajas {
+  input[type="radio"] {
+    width: 34px;
+    height: 34px;
+    margin: 0 8px 8px 0;
+    border-color: #dddddd;
+    &:focus {
+      border-color: #dddddd;
+    }
+  }
+  input[type="radio"]:checked {
+    border: 2px solid $c_tarots;
+    &::before {
+      content: url(data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBkYXRhLW5hbWU9IkNhcGEgMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTk4Ljg0IDE5OC44NCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNmZmY7fS5jbHMtMntmaWxsOiM3NDJjN2E7ZmlsbC1ydWxlOmV2ZW5vZGQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5kZWNrX2NoZWNrYm94PC90aXRsZT48ZyBpZD0iY2lyY3VsbyI+PGNpcmNsZSBjbGFzcz0iY2xzLTEiIGN4PSI5OS40MiIgY3k9Ijk5LjQyIiByPSI5OS40MiIvPjwvZz48ZyBpZD0icHJvIj48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xNjkuODYsMTE2LjEyYy0xOS4xNyw5LjI3LTM4LjQsMTguMzktNTcuNDcsMjcuODZhNDMsNDMsMCwwLDEtMzEuNTMsMy4yMWMtMTMuNDQtMy42NC0yNi45My03LjA1LTQwLjM3LTEwLjY5YTcsNywwLDAsMC02Ljg2LDEuNThjMS40OS40MywyLjcuODEsMy45MywxLjEzLDE4LjE3LDQuNzYsMzYuMzUsOS40OSw1NC41LDE0LjMyYTguMTgsOC4xOCwwLDAsMCw2LjExLS42M3EzMy4yMi0xNi4xNyw2Ni41Mi0zMi4xN2MzLTEuNDUsNi0yLjkzLDkuMzMtNC41OEEzLjcsMy43LDAsMCwwLDE2OS44NiwxMTYuMTJaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNODIuNTIsMTEwLjc2YzUuNzYsMS44MywxMC4zNiwxLjQ2LDE1LjU2LTEuNzMsNy4wOC00LjM0LDE0LjE2LTguNTQsMTkuNjQtMTUuMDgsOS0xMC43NSwxMi44LTIzLDEwLTM3LjI3YTMuODgsMy44OCwwLDAsMC0zLjA5LTMuMzVjLTE3LjE1LTUtMzQuMjgtMTAuMDYtNTEuNDItMTUuMS0zLjA3LS45MS0zLjA3LS44OS0yLjU4LDIuMzFBNDAuMzQsNDAuMzQsMCwwLDEsNjcuMiw2NC42N0M2MC43OCw3OCw1MC43MSw4Ny4zMiwzNy43NSw5My4zOGMtMS42OS43OC0zLjM5LDEuNTQtNS4wOSwyLjMxbC4xNy42MmMuNjQuMjEsMS4yOC40MywxLjkyLjYxQzUwLjY5LDEwMS40OSw2Ni43MSwxMDUuNzYsODIuNTIsMTEwLjc2WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTkyLjM1LDEyNS45YTcuMjEsNy4yMSwwLDAsMCw1LjM5LS41MlExMjcuMzgsMTExLDE1Ny4wOSw5Ni42N2wxNi44LTguMTRjLS42MS0uNDMtLjgtLjY1LTEtLjctMTEuODktMy4xNS0yMy43OS02LjI2LTM1LjY2LTkuNDUtMS43OS0uNDgtMi4yLjQ2LTIuNjYsMS44OC00Ljg3LDE1LjA4LTE0LjYzLDI1Ljc5LTI3LjcyLDMzLjQ3LTMuNzgsMi4yMi03LjY5LDQuMjEtMTEuNDUsNi40OWE4Ljc3LDguNzcsMCwwLDEtNy41NCwxYy0xNC45Mi00LjM5LTI5LjkyLTguNTItNDQuODEtMTMtMy42NS0xLjExLTYuMzIuMTItOS41OCwyLjIxbDQuMTQsMS4xQzU1Ljg1LDExNi4yOSw3NC4xMSwxMjEuMDUsOTIuMzUsMTI1LjlaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTY3LDEwMi41N2MtMTguMjEsOC44Ny0zNi41MiwxNy41LTU0LjY3LDI2LjVBNDIuNzgsNDIuNzgsMCwwLDEsODEsMTMyLjNjLTExLjc4LTMuMTktMjMuNjYtNi0zNS4zNy05LjQ3LTQuNTQtMS4zNS04LjA4LS4xNS0xMi4xMSwyLjQxLjgxLjI4LDEuMi40NSwxLjYuNTZxMjguNjIsNy41LDU3LjIxLDE1YTcuMjEsNy4yMSwwLDAsMCw1LjM5LS41M1ExMzEuMzIsMTI0LDE2NSwxMDcuOGw5LjIzLTQuNUMxNzEuMzgsMTAyLjM2LDE2OS40MSwxMDEuNCwxNjcsMTAyLjU3WiIvPjwvZz48L3N2Zz4=);
+      background-color: transparent;
+      margin: 0;
+      width: 30px;
+      height: 34px;
+    }
+  }
+}
+
+.cf-field__body .tabl {
+  input[type="radio"] {
+    width: 34px;
+    height: 34px;
+    margin: 0 8px 8px 0;
+    border-color: #dddddd;
+    &:focus {
+      border-color: #dddddd;
+    }
+  }
+  input[type="radio"]:checked {
+    border: 2px solid $c_tarots;
+    &::before {
+      font-family: dashicons;
+      font-size: 20px;
+      vertical-align: middle;
+      display: inline-block;
+      background: transparent;
+      color: $primary-color;
+      position: relative;
+      top: 1px;
+      left: 2px;
+    }
+  }
+  li:nth-child(1) {
+    input[type="radio"]:checked {
+      &::before {
+        content: "\f180";
+      }
+    }
+  }
+  li:nth-child(2) {
+    input[type="radio"]:checked {
+      &::before {
+        content: "\f11b";
+      }
+    }
+  }
+  li:nth-child(3) {
+    input[type="radio"]:checked {
+      &::before {
+        content: "\f105";
+      }
+    }
+  }
+}
+
+// license
+.license-key-container {
+  input {
+    width: 100%;
+  }
+}
+
+.range {
+  margin-bottom: 30px;
+  border-bottom: none !important;
+  $color: #d2d2d2;
+  .cf-field__body {
+    @media (min-width: 601px) {
+      width: 270px !important;
+    }
+    position: relative;
+    &::before {
+      content: "\f128";
+      font-family: dashicons;
+      font-size: 24px;
+      color: $color;
+      float: left;
+      left: -37px;
+      bottom: 1px;
+    }
+    &::after {
+      content: "\f100";
+      font-family: dashicons;
+      font-size: 20px;
+      color: $color;
+      float: right;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 1px;
+      height: 27px;
+    }
+  }
+}
+
+.marginRange {
+  border-bottom: none !important;
+  $color: #d2d2d2;
+  .cf-field__body {
+    @media (min-width: 601px) {
+      width: 270px !important;
+    }
+    position: relative;
+    &::before {
+      content: "-";
+      font-family: dashicons;
+      font-size: 24px;
+      color: $color;
+      float: left;
+      left: -37px;
+      bottom: 1px;
+    }
+    &::after {
+      content: "+";
+      font-family: dashicons;
+      font-size: 20px;
+      color: $color;
+      float: right;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 1px;
+      height: 27px;
+    }
+  }
+}
+
+.cf-container .cf-field.borde_abj .cf-field__help {
+  padding-bottom: 36px;
+  border-bottom: 1px solid;
+  min-width: 245px;
+}
+
+.disPubli {
+  display: none;
+}
+
+.tarotParrafo {
+  .cf-field__body {
+    z-index: 1;
+    position: relative;
+  }
+  .cf-field__help {
+    z-index: 1;
+    position: relative;
+    left: 100px;
+  }
+}
+
+.tarotParrafoNum {
+  $color: #d2d2d2;
+  position: relative;
+  bottom: 51px;
+  margin-bottom: -51px;
+  .cf-field__body {
+    @media (min-width: 601px) {
+      width: 82px !important;
+    }
+    position: relative;
+    &::after {
+      content: "";
+      font-size: 16px;
+      font-weight: normal;
+      float: right;
+      position: absolute;
+      right: -27px;
+      top: 5px;
+    }
+  }
+}
+
+.tarotWidth {
+  $color: #d2d2d2;
+  .cf-field__body {
+    @media (min-width: 601px) {
+      width: 82px !important;
+    }
+    position: relative;
+    &::after {
+      content: "px";
+      font-size: 16px;
+      font-weight: normal;
+      float: right;
+      position: absolute;
+      right: -27px;
+      top: 5px;
+      color: #818990;
+    }
+  }
+}
+
+.tablero_num {
+  $color: #d2d2d2;
+  .cf-field__body {
+    @media (min-width: 601px) {
+      width: 82px !important;
+    }
+    position: relative;
+    &::after {
+      content: "";
+      font-size: 16px;
+      font-weight: normal;
+      float: right;
+      position: absolute;
+      right: -27px;
+      top: 5px;
+      color: #818990;
+    }
+  }
+}
+
+.textYesNo {
+  $color: #d2d2d2;
+  .cf-field__body {
+    @media (min-width: 601px) {
+      width: 150px !important;
+    }
+    position: relative;
+  }
+  .cf-field__help {
+    margin-bottom: 20px;
+  }
+}
+
+.cf-field.cf-text.textYesNo.yesno2 .cf-field__body {
+  margin-top: -17px;
+}
+
+.tarotCardSize {
+  $color: #d2d2d2;
+  .cf-field__body {
+    @media (min-width: 601px) {
+      width: 82px !important;
+    }
+    position: relative;
+    &::after {
+      content: "px";
+      font-size: 16px;
+      font-weight: normal;
+      float: right;
+      position: absolute;
+      right: -27px;
+      top: 5px;
+    }
+  }
+  .cf-field__help {
+    margin-bottom: 20px;
+  }
+}
+.woo.shopId {
+  background-color: #7f54b3 !important;
+  a {
+    color: #fff;
+  }
+  &.lisoDefault_b {
+    margin-bottom: 30px;
+  }
+  .cf-field__help {
+    color: #d5bbf6;
+  }
+}
+
+.edd.shopId {
+  &.lisoDefault_b {
+    margin-bottom: 30px;
+  }
+}
+
+.shopId {
+  background: #181c2a;
+  &.lisoDefault_a {
+    margin-top: 30px;
+  }
+
+  h1 {
+    position: relative;
+    top: 3px;
+    color: #fff;
+  }
+
+  .cf-field__body {
+    position: relative;
+  }
+
+  .cf-field__help {
+    position: relative;
+    a.linkDocu {
+      color: #f9f9f9;
+      position: absolute;
+      top: -37px;
+      left: -24px;
+      width: 23px;
+      text-decoration: none;
+    }
+  }
+
+  .cf-text__input,
+  .cf-field__help {
+    max-width: 576px;
+  }
+
+  .cf-field__help {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  &.timeRestric {
+    .cf-field__head .cf-field__label {
+      color: #e8e8e8;
+      &::before {
+        content: "";
+      }
+    }
+  }
+
+  &.disableEDD {
+    display: none;
+  }
+}
+.deactivate,
+.inv .shopId {
+  opacity: 0.2;
+  position: relative;
+  &::after {
+    content: "\f160";
+    font-family: dashicons;
+    position: absolute;
+    top: 15px;
+    right: 14px;
+    font-size: 23px;
+    color: #d6d6dc;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  &::before {
+    content: "" !important;
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+.cf-media-gallery.imgBack {
+  .cf-media-gallery__actions {
+    border: none;
+  }
+}
+
+// Sidebar
+#postbox-container-1 {
+  position: relative;
+  top: 62px !important;
+  .postbox {
+    h2 {
+      font-size: 17px;
+    }
+
+    .inside {
+      padding: 16px;
+    }
+  }
+
+  .widgetArnelio {
+    .postbox-header {
+      background-color: #181c2a;
+    }
+    .inside ul li a {
+      color: #222;
+      &:hover {
+        color: #72aee6;
+      }
+    }
+    .arnelioLogo {
+      padding: 15px 45px;
+    }
+  }
+
+  .ArnDeck {
+    .inside {
+      text-align: center;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      a {
+        padding: 7.5px 12px;
+        width: 100%;
+        // background: #c1a738;
+        // border-color: #c1a738;
+      }
+    }
+  }
+
+  .cancelApi {
+    $color: #2271b1;
+    display: none;
+
+    color: $color;
+    border: 1px solid $color;
+    background: #f6f7f7;
+
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    line-height: 2.15384615;
+    margin-bottom: 20px;
+    padding: 7px 10px;
+    // height: 60px;
+    // font-size: 16px;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    &:hover {
+      background: #f0f0f1;
+    }
+  }
+}
+
+// bloquear sidebar
+body.post-type-tarokkina_pro {
+  .carbon-theme-options #post-body.columns-2 #postbox-container-1.fixed {
+    position: relative !important;
+    margin-right: -300px;
+  }
+}
+
+.new {
+  opacity: 1;
+  $color: #aaaaaa;
+  $color2: #999999;
+  background-color: #fafafa;
+  position: relative;
+  color: $color2 !important;
+
+  &::before {
+    content: "New";
+    position: absolute;
+    left: -25px;
+    top: 10px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 10px;
+    line-height: 1.8em;
+    visibility: visible;
+    border-radius: 3px;
+    background-image: -o-linear-gradient(left, #ff6d6f, #742c7a);
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#ff6d6f),
+      to(#742c7a)
+    );
+    background-image: linear-gradient(90deg, #ff6d6f, #742c7a);
+    border-color: #000;
+    color: #fff;
+  }
+
+  .cf-radio__input:checked ~ .cf-radio__label .cf-radio-image__image {
+    outline: 4px solid $color !important;
+  }
+}
+
+.new-option {
+  opacity: 1;
+  $color: #aaaaaa;
+  $color2: #c5c5c5;
+  background-color: #fafafa;
+  position: relative;
+  color: $color2 !important;
+
+  &::before {
+    content: "New";
+    position: absolute;
+    left: -25px;
+    top: 0;
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 10px;
+    line-height: 1.8em;
+    visibility: visible;
+    border-radius: 3px;
+    background-image: -o-linear-gradient(left, #ff6d6f, #742c7a);
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#ff6d6f),
+      to(#742c7a)
+    );
+    background-image: linear-gradient(90deg, #ff6d6f, #742c7a);
+    border-color: #000;
+    color: #fff;
+  }
+
+  .cf-radio__input:checked ~ .cf-radio__label .cf-radio-image__image {
+    outline: 4px solid $color !important;
+  }
+}
+
+#close-button {
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  position: absolute;
+  color: #332;
+  top: 0;
+  right: 0;
+}
+#close-button:hover {
+  background-color: #fff;
+}
+
+.titleNews {
+  position: relative;
+  &::before {
+    content: "New";
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 10px;
+    line-height: 1.8em;
+    visibility: visible;
+    border-radius: 3px;
+    background-image: -o-linear-gradient(left, #ff6d6f, #742c7a);
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#ff6d6f),
+      to(#742c7a)
+    );
+    background-image: linear-gradient(90deg, #ff6d6f, #742c7a);
+    border-color: #000;
+    color: #fff;
+  }
+}
+
+.Nadd {
+  color: #c51761;
+  font-weight: bold;
+  padding: 1px 3px;
+  border-radius: 3px;
+}
+.NaddText {
+  color: #333;
+}
+
+.plug_active {
+  font-size: 14px;
+  color: #ffffff;
+  background: #4da69b;
+  padding: 2px 4px;
+  max-width: 60px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+////// Delete Tarots  ////
+.buttonMostrar {
+  position: relative;
+  left: 10px;
+  cursor: pointer;
+}
+
+.insertP img {
+  width: 140px;
+  vertical-align: sub;
+}
+
+// numeros de los 100 tarots
+.tarokkina_pro_page_crb_carbon_fields_container_tarots2 {
+  .bloq_del_tarots .cf-complex__groups {
+    counter-reset: list-number 10;
+  }
+  .bloq_del_tarots .cf-complex__groups .cf-complex__group:before {
+    counter-increment: list-number;
+    content: counter(list-number);
+  }
+}
+
+.tarokkina_pro_page_crb_carbon_fields_container_tarots3 {
+  .bloq_del_tarots .cf-complex__groups {
+    counter-reset: list-number 20;
+  }
+  .bloq_del_tarots .cf-complex__groups .cf-complex__group:before {
+    counter-increment: list-number;
+    content: counter(list-number);
+  }
+}
+
+.tarokkina_pro_page_crb_carbon_fields_container_tarots4 {
+  .bloq_del_tarots .cf-complex__groups {
+    counter-reset: list-number 30;
+  }
+  .bloq_del_tarots .cf-complex__groups .cf-complex__group:before {
+    counter-increment: list-number;
+    content: counter(list-number);
+  }
+}
+
+.tarokkina_pro_page_crb_carbon_fields_container_tarots5 {
+  .bloq_del_tarots .cf-complex__groups {
+    counter-reset: list-number 40;
+  }
+  .bloq_del_tarots .cf-complex__groups .cf-complex__group:before {
+    counter-increment: list-number;
+    content: counter(list-number);
+  }
+}
+
+.tarokkina_pro_page_crb_carbon_fields_container_tarots6 {
+  .bloq_del_tarots .cf-complex__groups {
+    counter-reset: list-number 50;
+  }
+  .bloq_del_tarots .cf-complex__groups .cf-complex__group:before {
+    counter-increment: list-number;
+    content: counter(list-number);
+  }
+}
+
+.tarokkina_pro_page_crb_carbon_fields_container_tarots7 {
+  .bloq_del_tarots .cf-complex__groups {
+    counter-reset: list-number 60;
+  }
+  .bloq_del_tarots .cf-complex__groups .cf-complex__group:before {
+    counter-increment: list-number;
+    content: counter(list-number);
+  }
+}
+
+.tarokkina_pro_page_crb_carbon_fields_container_tarots8 {
+  .bloq_del_tarots .cf-complex__groups {
+    counter-reset: list-number 70;
+  }
+  .bloq_del_tarots .cf-complex__groups .cf-complex__group:before {
+    counter-increment: list-number;
+    content: counter(list-number);
+  }
+}
+
+.tarokkina_pro_page_crb_carbon_fields_container_tarots9 {
+  .bloq_del_tarots .cf-complex__groups {
+    counter-reset: list-number 80;
+  }
+  .bloq_del_tarots .cf-complex__groups .cf-complex__group:before {
+    counter-increment: list-number;
+    content: counter(list-number);
+  }
+}
+
+.tarokkina_pro_page_crb_carbon_fields_container_tarots10 {
+  .bloq_del_tarots .cf-complex__groups {
+    counter-reset: list-number 90;
+  }
+  .bloq_del_tarots .cf-complex__groups .cf-complex__group:before {
+    counter-increment: list-number;
+    content: counter(list-number);
+  }
+}
+
+////////////////////////// Options  ////////////////////////////////
+///
+/// //////////////////////////////////////////////////////////////////////
+body.tarokkina_pro_page_crb_carbon_fields_container_options {
+  #postbox-container-1 {
+    margin-top: 48px;
+    margin-bottom: 50px !important;
+  }
+
+  .cf-container-carbon_fields_container_options {
+    display: block !important;
+  }
+
+  .cf-container .cf-field.fieldOption {
+    background: inherit;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    label {
+      color: #32373c;
+      font-weight: bold;
+      font-size: 15px;
+    }
+  }
+
+  .text_unistall {
+    margin-left: 13px;
+  }
+
+  img.imgPubli {
+    width: 140px;
+    vertical-align: sub;
+  }
+
+  .tkta_options_tabs {
+    ul.cf-container__tabs-list {
+      li:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+
+  .lisoDefault.colorA {
+    background-color: #fafafa;
+  }
+  .cf-container__tabs-item--current {
+    background-color: #fafafa !important;
+  }
+  .cf-container__tabs-item {
+    background-color: #ededed;
+    &:hover {
+      background-color: #fafafa;
+    }
+  }
+
+  .theme-options-container .cf-container__fields {
+    background-color: #fafafa !important;
+  }
+
+  .cf-field__body select,
+  .cf-field__body input[type="text"] {
+    color: #2271b1;
+  }
+
+  .upload_decks_content {
+    background-color: #fafafa;
+    color: #999;
+    padding: 20px 0;
+    .upload_decks_sub_content {
+      padding: 50px 25px 25px 25px;
+      margin-left: 55px;
+      border-left: 3px solid #e7e7e7 !important;
+    }
+    .upload_decks__head {
+      color: #32373c;
+      font-weight: bold;
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+    .upload_deck__content {
+      border: 4px dashed #f1f1f1;
+      padding: 25px;
+      color: #bebfcc;
+    }
+    &.new-option {
+      &::before {
+        top: 20px !important;
+        left: 68px !important;
+      }
+    }
+  }
+}
+
+.containermenuT {
+  position: relative;
+  bottom: 10px;
+}
+
+///////////////////////////////////////////////////////////////////
+[dir="rtl"] {
+  ul.gradient-list {
+    margin: 0 10px 0 0;
+    li {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+  }
+
+  .post-type-tarokkina_pro
+    .cf-complex__group--collapsed
+    .cf-complex__group-head {
+    direction: ltr;
+  }
+
+  .titleNews::before {
+    margin-left: 10px;
+  }
+
+  .cf-field.cf-checkbox.tabs_color label.cf-checkbox__label {
+    margin-right: 17px;
+  }
+
+  .title_inside .dashicons {
+    margin-left: 10px;
+  }
+
+  .cf-field__body .tarokki_barajas input[type="radio"] {
+    margin: 0 0 8px 8px;
+  }
+
+  .post-type-tarokkina_pro .spreadsSelect {
+    text-align: right;
+    right: 17px;
+  }
+
+  .type_select {
+    .cf-field__body {
+      select {
+        margin-right: 8px;
+        background: #ffffff
+          url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E)
+          no-repeat left 5px top 55%;
+      }
+    }
+  }
+
+  .new::before {
+    right: -25px;
+    max-width: 24px;
+    text-align: center;
+  }
+
+  .post-type-tarokkina_pro .blockTab .cf-field__help {
+    right: 185px;
+  }
+
+  .tarokki_selector li:last-child::after {
+    margin-right: 10px;
+  }
+
+  .tarotParrafo .cf-field__help {
+    right: 100px;
+  }
+
+  .lisoDefault {
+    border-right: 3px solid #e7e7e7 !important;
+    border-left: none !important;
+  }
+
+  .tarokkina_pro_page_tarokina_pro_license .wrap_lic .bloq_header img {
+    margin-left: 15px !important;
+  }
+}
+
+// warning_firefox
+.warning_firefox {
+  display: none;
+  text-align: left;
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba !important;
+  max-width: 500px;
+  margin: 30px auto;
+  line-height: 1.4;
+
+  h3 {
+    color: #856404;
+    text-align: center;
+  }
+
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+
+  .warning_firefox_icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+    svg {
+      width: 60px;
+    }
+  }
+}

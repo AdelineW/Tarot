@@ -1,0 +1,75 @@
+// wp-content/plugins/tarokina-pro/compilador_scss.php?p=back_bloqueo.scss
+
+.postbox .bloq_del_tarots{
+    .cf-complex__inserter-menu{
+        border-radius: 3px;
+        background-color: #ffffff;
+        -webkit-box-shadow: 2px 2px 3em rgba(146, 146, 146, 0.67);
+                box-shadow: 2px 2px 3em rgba(146, 146, 146, 0.67);
+                
+        border: 3px solid #c5c5c5;
+        &::before{
+            border-color: transparent #c5c5c5;
+            border-width: 8px 8px 8px 0;
+            margin-top: -8px;
+        }
+
+    }
+    .cf-complex__inserter-item{
+        color: #2d2d2d;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        &:hover{
+            color: #000;
+        }
+        &::before{
+            content: "\f123";
+            font-family: dashicons;
+            font-size: 19px;
+            color: $primary-color;
+            vertical-align: middle;
+            text-align: center;
+            margin-right: 5px;
+            padding: 0 2px;
+            //min-width: 35px;
+            text-transform: none;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+   
+        &.inactive{
+            color: rgba(#000,0.2) !important;
+            pointer-events: none !important;
+            cursor: default !important;
+            &::before {
+                content: "\f160";
+                font-family: dashicons;
+                font-size: 23px;
+                margin-left: -5px;
+                color: #d6d6dc;
+                text-transform: none;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+        }
+        &.plugin_inactive{
+            color: rgba(#000,0.2) !important;
+            pointer-events: none !important;
+            cursor: default !important;
+            &::before {
+                font-size: 18px;
+                margin-right: 5px;
+                text-transform: none;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+        }
+    }
+}

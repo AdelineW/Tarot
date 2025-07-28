@@ -1,0 +1,12 @@
+{
+    "tarokina-pro": 
+        {
+            "tarot_type": "pro",
+            "tarot_title": "Tarokina Pro",
+            "name_designed": "arnelio.com",
+            "email_designed": "info@arnelio.com",
+            "tarot_slug": "tarokina-pro",
+            "tarot_text": "Texto descriptivo sobre Tarokina Pro.",
+            "tarot_image": "tarokina-pro.png"
+        }
+}

@@ -1,0 +1,380 @@
+/////////////////////  LICENCIA  ///////////////////////////////////////
+//@import "back_funciones";
+@import "back_colors";
+@import "back_base";
+
+.tarokkina_pro_page_tarokina_pro_license {
+  #wpbody-content {
+
+    .form-text{
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 25px;
+      text-align: center;
+      color: #555;
+    }
+
+    .tkina-wrap {
+      max-width: 800px;
+     // margin: 20px auto;
+
+      // Clase para ocultar visualmente h1 pero mantener su espacio
+      .visually-hidden {
+        visibility: hidden;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+
+        & + p {
+          margin-top: 0; // Ajustamos el margen del párrafo siguiente
+        }
+      }
+
+      // Estilo para el contenedor del campo de licencia
+      .layo-field {
+        // background-color: #fff;
+        // border-radius: 8px;
+        // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        padding: 25px;
+        margin-bottom: 30px;
+
+        // Estilo mejorado para mensajes de alerta
+        [role="alert"] {
+          border-radius: 4px;
+          padding: 10px 15px;
+          position: relative;
+          padding-right: 35px; /* Espacio para el botón de cierre */
+          
+
+          &.alert-success {
+            background-color: #edf7ed;
+            border-left: 4px solid #46b450;
+            color: #46b450 !important;
+          }
+
+          &.alert-danger {
+            background-color: #fbeaea;
+            border-left: 4px solid #dc3232;
+            color: #dd3333 !important;
+          }
+
+          &.alert-info {
+            background-color: #e5f5fa;
+            border-left: 4px solid #00a0d2;
+            color: #1e8cbe !important;
+          }
+
+          /* Estilo para el botón de cierre en estilo WordPress */
+          .notice-dismiss-tarokina {
+            position: absolute;
+            top: 0;
+            right: 1px;
+            border: none;
+            margin: 0;
+            padding: 9px;
+            background: none;
+            color: #787c82;
+            cursor: pointer;
+
+            &:before {
+              content: "\f153";
+              font: normal 16px/20px dashicons;
+              display: block;
+              speak: never;
+              height: 20px;
+              width: 20px;
+              text-align: center;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+            }
+
+            &:hover {
+              color: #d63638;
+            }
+          }
+        }
+
+        // Estilo para el campo de input
+        .input-group {
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 15px;
+
+          .input-group-text {
+            padding: 8px 12px;
+            border-radius: 4px 0 0 4px;
+            border: 1px solid #ddd;
+            border-right: none;
+            background-color: #f9f9f9;
+
+            &.text-bg-success {
+              background-color: #edf7ed;
+              border-color: #46b450;
+              color: #46b450;
+            }
+
+            &.text-bg-danger {
+              background-color: #fbeaea;
+              border-color: #dc3232;
+              color: #dc3232;
+            }
+          }
+
+          input.form-control {
+            flex: 1;
+            height: 40px;
+            border-radius: 0;
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            font-size: 14px;
+
+            &:focus {
+              border-color: #2271b1;
+              box-shadow: 0 0 0 1px #2271b1;
+              outline: none;
+            }
+          }
+
+          .digit4 {
+            padding: 8px 12px;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-left: none;
+            border-right: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+          }
+
+          // Botones de activación/desactivación
+          button {
+            padding: 8px 15px;
+            border-radius: 0 4px 4px 0;
+            border: 1px solid #2271b1 !important;
+            background-color: #2271b1 !important;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s ease;
+
+            &:hover {
+              background-color: #135e96;
+              border-color: #135e96;
+            }
+
+            &:disabled {
+              opacity: 0.6;
+              cursor: not-allowed;
+            }
+
+            &.btn-danger {
+              background-color: #dc3232;
+              border-color: #dc3232;
+
+              &:hover {
+                background-color: #b32d2e;
+                border-color: #b32d2e;
+              }
+            }
+          }
+        }
+      }
+
+      // Estilos para los mensajes
+      #license-messages {
+        margin-top: 15px;
+
+        .notice {
+          margin-left: 0;
+          margin-right: 0;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+
+  // Estilos adicionales para dispositivos móviles
+  @media screen and (max-width: 782px) {
+    #wpbody-content .wrap {
+      margin: 10px;
+
+      .layo-field {
+        padding: 15px;
+
+        .input-group {
+          flex-direction: column;
+
+          .input-group-text,
+          input.form-control,
+          .digit4,
+          button {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+          }
+
+          button {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+// Estilos antiguos para la página de licencia de Tarokina Pro
+
+.tarokkina_pro_page_tarokina_pro_license {
+  #wpbody-content {
+    @media (max-width: 1115px) {
+    }
+    .wrap_lic {
+      max-width: 800px;
+      margin: 14px;
+      .bloq_content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        & > div {
+          margin-top: -1px;
+          border-top: 1px solid #efefef;
+          -webkit-box-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          width: 100%;
+          @media (max-width: 450px) {
+            -webkit-box-flex: 0;
+            -ms-flex: none;
+            flex: none;
+            input[type="text"] {
+              width: 100%;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  div.bloq_content {
+    color: #7f8b97;
+      input[type="text"] {
+        border: 1px solid rgba(47, 107, 162, 0.38);
+        color: #134069;
+        background: rgba(174, 206, 235, 0.38);
+        max-width: 85%;
+        display: block;
+        margin: 10px 0;
+      }
+
+      p.submit {
+        display: inline;
+      }
+    
+
+    .mensajeActivo {
+      color: green;
+      padding: 5px;
+      margin: 10px 0 10px;
+      text-align: right;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      display: flex;
+      justify-content: end;
+    }
+    .mensajeDesactivo {
+      color: red;
+      padding: 5px;
+      margin: 10px 0 10px;
+      text-align: right;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      display: flex;
+      justify-content: end;
+      a {
+        color: red;
+        &:hover {
+          color: $color_wordpress;
+        }
+      }
+    }
+
+
+  }
+
+  form {
+    background: white;
+    padding: 12px 22px;
+    .form-table {
+      th {
+        display: none;
+      }
+      td {
+        padding: 0;
+        margin: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+
+        input.button-secondary{
+          height: 0;
+          padding: 0 10px;
+          position: relative;
+          top: 10px;
+        }
+      }
+    }
+  }
+
+  .wrap_lic {
+    .bloq_header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      img {
+        width: 150px;
+        height: 80px;
+        margin-right: 15px;
+        border-radius: 2px;
+      }
+    }
+    .descri {
+      margin-top: -10px;
+    }
+    p {
+      font-size: 14px;
+    }
+    .btn_active {
+      float: right;
+    }
+  }
+
+  ////////////////////////
+}
+
+
+///////////////////////////////////////////////////////////////////
+[dir="rtl"] {
+
+  .tarokkina_pro_page_tarokina_pro_license .wrap_lic .bloq_header img {
+    margin-left: 15px !important;
+  }
+
+}
